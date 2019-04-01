@@ -1,16 +1,19 @@
 {
   "name": "puppeteer-page-object",
   "dependencies": {
+    "@types/puppeteer": "^1.12.3",
+    "puppeteer-core": "^1.13.0",
+    "typescript": "^3.3.4000"
+  },
+  "devDependencies": {
     "@types/get-port": "^4.2.0",
     "@types/jest": "^24.0.11",
-    "@types/puppeteer": "^1.12.3",
-    "get-port": "^4.2.0",
     "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
     "jest-extended": "^0.11.1",
     "jest-puppeteer": "^4.1.0",
     "puppeteer": "^1.13.0",
-    "ts-jest": "^24.0.0",
-    "typescript": "^3.3.4000"
+    "get-port": "^4.2.0"
   },
   "scripts": {
     "test": "jest"
