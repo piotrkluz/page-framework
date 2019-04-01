@@ -1,7 +1,7 @@
-import { $, $x, $$, $$x } from "../lib/BasePage";
+import { $, $x, $$, $$x } from "../../lib/BasePage";
 import { Page } from "puppeteer";
-import { ElemArray } from "../lib/elemArray";
-import * as server from "./testServer/server";
+import { ElemArray } from "../../lib/elemArray";
+import * as server from "../testServer/server";
 
 const H1 = "First";
 const LIST = [

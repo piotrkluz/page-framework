@@ -1,7 +1,7 @@
-import { $, $x, $$, $$x } from "../lib/BasePage";
+import { $, $x, $$, $$x } from "../../lib/BasePage";
 import { Page } from "puppeteer";
-import * as server from "./testServer/server";
-import { Elem } from "../lib/elem";
+import * as server from "../testServer/server";
+import { Elem } from "../../lib/elem";
 
 declare var page: Page;
 const ELEM_TEXT = "Some text."
@@ -54,7 +54,6 @@ describe("Matcher element", () => {
         it("Not displayed element", async () => {
             expect(await $(".not-displayed").click())
         })
-
     })
 
     describe("getText", () =>{
