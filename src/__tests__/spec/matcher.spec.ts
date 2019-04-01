@@ -2,6 +2,7 @@ import { $, $x, $$, $$x } from "../../lib/BasePage";
 import { Page } from "puppeteer";
 import { ElemArray } from "../../lib/elemArray";
 import * as server from "../testServer/server";
+import { shouldThrow } from "../matchers";
 
 const H1 = "First";
 const LIST = [
@@ -21,13 +22,13 @@ describe("Matcher element", () => {
         server.stop();
     });
 
-    it("DEBUG", async () => {
+    it("DEBUG", async () => { 
 
     })
 
     it("simple css", async () => {
         const text = await $("h1").getText();
-        expect(text).toEqual(H1)
+        expect(text).toEqual(H1) 
     })
 
     it("simple xpath", async () => {
@@ -134,14 +135,4 @@ async function verifySimpleList(els: ElemArray) {
 
     const elsMap = await els.map(async (e) => await e.getText());
     expect(elsMap).toEqual(LIST);
-}
-
-async function shouldThrow(func: () => any) {
-    let error;
-    try {
-        await func();
-    } catch (e) {
-        error = e;
-    }
-    expect(error).toBeTruthy();
 }

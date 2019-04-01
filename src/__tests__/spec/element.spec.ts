@@ -2,6 +2,7 @@ import { $, $x, $$, $$x } from "../../lib/BasePage";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
 import { Elem } from "../../lib/elem";
+import { shouldThrow } from "../matchers";
 
 declare var page: Page;
 const ELEM_TEXT = "Some text."
@@ -18,8 +19,8 @@ describe("Matcher element", () => {
     afterAll(() => {
         server.stop();
     });
-    
-    describe("tryFind", () =>{
+
+    describe("tryFind", () => {
         it("exists", async () => {
             expect(await $(".exist").tryFind()).toBeInstanceOf(Elem);
         })
@@ -28,12 +29,11 @@ describe("Matcher element", () => {
         })
     })
 
-    describe("getElement", () =>{
+    describe("getElement", () => {
         it("getElement", async () => {
             expect(
                 (await $(".exist").getElement()).constructor.name
-            )
-            .toEqual("ElementHandle")
+            ).toEqual("ElementHandle")
         })
     })
 
@@ -46,17 +46,18 @@ describe("Matcher element", () => {
             expect(await $(".scrolled").click())
         })
 
-        
         it("Hidden element", async () => {
             expect(await $(".hidden").click())
         })
 
-        it("Not displayed element", async () => {
-            expect(await $(".not-displayed").click())
+        it("Not displayed element", () => {
+            shouldThrow(() => $(".not-displayed").click());
+            // $(".not-displayed").click().catch(e => expect(e.message)
+            // .toMatch("Node is either not visible or not an HTMLElement"));
         })
     })
 
-    describe("getText", () =>{
+    describe("getText", () => {
         it("Empty element", async () => {
             expect(await $(".elem").getText()).toBe(ELEM_TEXT)
         })
@@ -68,11 +69,12 @@ describe("Matcher element", () => {
         })
         it("Element with text and subelement", async () => {
             expect(await $(".with-text-and-subelement").getText())
-            .toBe(ELEM_TEXT + SUB_ELEMENT_TEXT)
+                .toBe(ELEM_TEXT + SUB_ELEMENT_TEXT) 
         })
     })
 
-    describe("typeText", () =>{
+    describe("typeText", () => {
+        
         it("Empty input", async () => {
             const input = $(".input");
             await input.clear();
@@ -82,35 +84,39 @@ describe("Matcher element", () => {
         })
         it("Input with text", async () => {
             const input = $(".input");
-
             await input.clear();
             await input.typeText(TYPE_TEXT);
             await input.typeText(TYPE_TEXT);
 
             expect(await input.getValue()).toBe(TYPE_TEXT + TYPE_TEXT);
         })
-        it.skip("Keyboard schroucut", async () => {
+        it.skip("Keyboard schroucut", async () => { 
             expect(false).toBeTruthy(); // TODO
         })
     })
 
-    describe("waitFor", () =>{
-        
-    })
-
-    describe("eval", () =>{
-        
-    })
-
-    it("getElement", async () => { })
-    it("getText", async () => { })
     describe("isDisplayed", () => {
-        it("invalid selector", async () => { })
-        it("not exist element", async () => { })
-        it("element display:none", async () => { })
-        it("element visibility:hidden", async () => { })
-        it("visible zero-height element", async () => { })
-        it("visible empty element", async () => { })
-        it("visible element with content", async () => { })
+        it("invalid selector", async () => {
+            $("////invalid").isDisplayed().catch(e => expect(e.message).toBe("DUPA"))
+         })
+        it("not exist element", async () => { 
+            expect(await $(".not-exist").isDisplayed()).toBeFalsy();
+        })
+        it("element display:none", async () => {
+            expect(await $(".display-none").isDisplayed()).toBeFalsy();
+        })
+        it("element visibility:hidden", async () => {
+            expect(await $(".hidden").isDisplayed()).toBeFalsy();
+        })
+        it("visible zero-height element", async () => {
+            expect(await $(".zero").isDisplayed()).toBeTruthy();
+        })
+        it("visible empty element", async () => {
+            expect(await $(".empty").isDisplayed()).toBeTruthy();
+        })
+        it("visible element with content", async () => {
+            expect(await $(".elem").isDisplayed()).toBeTruthy();
+            
+        })
     })
 })
