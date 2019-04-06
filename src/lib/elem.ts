@@ -1,33 +1,17 @@
 import { Selector, CssSelector, XPathSelector } from "./selector";
 import { ElementHandle, Page } from "puppeteer";
-import { ElemArray } from "./elemArray";
 import { Client } from "./client";
 import * as utils from "../utils/utils";
 import { Keyboard } from "puppeteer-keyboard";
+import { Matcher } from "./matcher";
 
 declare var page: Page;
 
 export class Elem {
     constructor(
-        private selector: Selector,
-        protected parent: Elem = null,
+        protected selector: Selector,
+        protected parent: Matcher = null,
         public handle: ElementHandle<Element> = null) { }
-
-    $(css: string, nth: number = 0): Elem {
-        return new Elem(new CssSelector(css, nth), this);
-    }
-
-    $$(css: string): ElemArray {
-        return new ElemArray(new CssSelector(css), this)
-    }
-
-    $x(xpath: string, nth: number = 0) {
-        return new Elem(new XPathSelector(xpath, nth), this);
-    }
-
-    $$x(xpath: string) {
-        return new ElemArray(new XPathSelector(xpath), this);
-    }
 
     async find(): Promise<Elem> {
         if (await this.verifyHandle()) {
@@ -65,15 +49,15 @@ export class Elem {
     }
 
     async isDisplayed(): Promise<boolean> {
-        return (await this.isExist()) && 
-        await this.eval(el => {
-            const style = window.getComputedStyle(el);
+        return (await this.isExist()) &&
+            await this.eval(el => {
+                const style = window.getComputedStyle(el);
 
-            return style &&
-            style.display !== 'none' && 
-            style.visibility !== 'hidden' &&
-            style.opacity !== '0'
-        });
+                return style &&
+                    style.display !== 'none' &&
+                    style.visibility !== 'hidden' &&
+                    style.opacity !== '0'
+            });
     }
 
     async click() {
@@ -117,7 +101,7 @@ export class Elem {
     }
 
     async waitForDisappear(timeout: number = 10000) {
-        await utils.waitFor(async () => !this.isDisplayed(), timeout);
+        await utils.waitFor(() => !this.isDisplayed(), timeout);
     }
 
     async eval<R>(pageFunction: (element: Element) => R | Promise<R>): Promise<R> {
@@ -171,6 +155,10 @@ export class Elem {
         throw new Error(msg);
     }
 
+    /**
+     * Most cost-effective way to check if element handle is still available.
+     * It takes approx 2-3ms
+     */
     private async verifyHandle() {
         try {
             await this.handle.executionContext().evaluate(() => { }); //make sure handle is still available

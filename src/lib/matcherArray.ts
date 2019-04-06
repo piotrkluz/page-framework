@@ -1,11 +1,12 @@
 import { Selector } from "./selector";
 import { Elem } from "./elem";
 import { Client } from "./client";
+import { Matcher } from "./matcher";
 
-export class ElemArray {
+export class MatcherArray {
     constructor(
         private selector: Selector,
-        protected parent: Elem = null) { }
+        protected parent: Matcher = null) { }
 
     async map<T>(func: (el: Elem) => Promise<T>): Promise<T[]> {
         const els = await this.findAll();

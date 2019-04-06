@@ -1,7 +1,8 @@
 import { Page } from "puppeteer";
 import { Elem } from "./elem";
 import { CssSelector, XPathSelector } from "./selector";
-import { ElemArray } from "./elemArray";
+import { MatcherArray } from "./matcherArray";
+import { Matcher } from "./matcher";
 
 /** DECLARED GLOBAL VARIABLE */
 declare var page: Page;
@@ -24,19 +25,19 @@ export class BasePage {
 }
 
 export function $(selector: string, nth: number = 0) {
-    return new Elem(new CssSelector(selector, nth));
+    return new Matcher(new CssSelector(selector, nth));
 }
 
 export function $$(selector: string) {
-    return new ElemArray(new CssSelector(selector));
+    return new MatcherArray(new CssSelector(selector));
 }
 
 export function $x(xpath: string, nth: number = 0) {
-    return new Elem(new XPathSelector(xpath, nth));
+    return new Matcher(new XPathSelector(xpath, nth));
 }
 
 export function $$x(xpath: string) {
-    return new ElemArray(new XPathSelector(xpath));
+    return new MatcherArray(new XPathSelector(xpath));
 }
 
 

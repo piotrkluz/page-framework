@@ -7,10 +7,10 @@ Page object / page modules implementation, for puppeteer. 100% TypeScript.
 - [x] Element proxy mechanism
 - [x] Slector abstraction
 - [x] Fluent interface for selectors
-- [ ] Refactor -> create separated Matcher class
+- [x] Refactor -> create separated Matcher class
 - [x] Add documentation with examples in JavaScript / TypeScript
 - [x] used puppeteer-keyboard
-- [ ] $(".elem").module(ModuleName) 
+- [ ] $(".elem").module(ModuleName)
 
 
 # What You can do with this lib (examples)
