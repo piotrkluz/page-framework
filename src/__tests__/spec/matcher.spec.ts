@@ -1,4 +1,4 @@
-import { $, $x, $$, $$x } from "../../lib/BasePage";
+import { $, $x, $$, $$x } from "../../lib/basePage";
 import { Page } from "puppeteer";
 import { ElemArray } from "../../lib/elemArray";
 import * as server from "../testServer/server";
@@ -9,6 +9,8 @@ const LIST = [
     "list1", "list2",
     "list3", "list4"
 ]
+const N = 2;
+const Nth = LIST[1];
 
 declare var page: Page;
 
@@ -21,10 +23,6 @@ describe("Matcher element", () => {
     afterAll(() => {
         server.stop();
     });
-
-    it("DEBUG", async () => { 
-
-    })
 
     it("simple css", async () => {
         const text = await $("h1").getText();
@@ -83,27 +81,33 @@ describe("Matcher element", () => {
     })
 
     it("CSS nth element", async () => {
-        const el = await $("ul.simple > li", 2).getText();
+        const el = await $("ul.simple > li", N).getText();
 
-        expect(el).toBe(LIST[2]);
+        expect(el).toBe(Nth);
     })
 
     it("XPATH nth element", async () => {
-        const el = await $x("//ul[@class='simple']/li", 2).getText();
+        const el = await $x("//ul[@class='simple']/li", N).getText();
 
-        expect(el).toBe(LIST[2]);
+        expect(el).toBe(Nth);
+    })
+
+    it("nth XPATH nested in CSS", async () => {
+        const el = await $("ul.simple").$x(`(/li)[${N}]`).getText();
+        
+        expect(el).toBe(Nth);
     })
 
     it("Nested nth CSS in Xpath", async () => {
-        const el = await $x("//ul[@class='simple']").$("li", 2).getText();
+        const el = await $x("//ul[@class='simple']").$("li", N).getText();
 
-        expect(el).toBe(LIST[2]);
+        expect(el).toBe(Nth);
     })
 
     it("Nested nth XPATH in Xpath", async () => {
-        const el = await $("ul.simple").$x("/li", 2).getText();
+        const el = await $("ul.simple").$x("/li", N).getText();
 
-        expect(el).toBe(LIST[2]);
+        expect(el).toBe(Nth);
     })
 
     it("WRONG CSS", async () => {

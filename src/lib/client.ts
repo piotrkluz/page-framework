@@ -8,16 +8,24 @@ export class Client {
             ? parentElement
             : page;
 
-        if(selector.nth == 0 && selector.constructor.name == "CssSelector") {
+        if(selector.nth == 1 && selector.constructor.name == "CssSelector") {
             return await base.$(selector.toString());
         }
 
-        const result = (await this.findAll(selector, parentElement))[selector.nth];
+        const results = await this.findAll(selector, parentElement);
+        const result = results[selector.nth - 1];
 
         if(result == undefined) {
             if(selector.nth == 0) {
                 throw new Error(`Not found any element: 
                 \nSELECTOR: ${selector.toString()}`)
+            }
+
+            if(results) {
+                throw new Error(`Requested element number ${selector.nth} not found.
+                Found only ${results.length} elementswith selector:
+                ${selector.toString()}               
+                `)
             }
 
             throw new Error(`Not found element:
@@ -39,8 +47,8 @@ export class Client {
             } 
             
             // xpath
-            const fixedXpath = parentElement //dot in xpath is required
-                ? this.fixNestedXpath(selector.toString())
+            const fixedXpath = parentElement
+                ? this.fixNestedXpath(selector.toString()) //dot in xpath is required
                 : selector.toString()
 
             return await base.$x(fixedXpath);

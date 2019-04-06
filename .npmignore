@@ -1,0 +1,7 @@
+.vscode/
+coverage/
+src/
+dist/__tests__/
+jest.config.js
+tsconfig.json
+yarn.lock

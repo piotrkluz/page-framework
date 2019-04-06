@@ -1,8 +1,10 @@
 export abstract class Selector {
     constructor(
         protected selector: string,
-        public nth: number = 0
-        ) { }
+        public nth: number = 1
+        ) {
+            if (nth < 1) this.nth = 1; // ignore wrong selectors
+        }
 
     toString() {
         return this.selector;

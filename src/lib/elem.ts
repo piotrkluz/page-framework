@@ -2,13 +2,10 @@ import { Selector, CssSelector, XPathSelector } from "./selector";
 import { ElementHandle, Page } from "puppeteer";
 import { ElemArray } from "./elemArray";
 import { Client } from "./client";
-import * as utils from "./utils";
-import { InputType } from "zlib";
+import * as utils from "../utils/utils";
+import { Keyboard } from "puppeteer-keyboard";
 
-interface Global {
-    page: Page
-}
-(<Global><unknown>global).page;
+declare var page: Page;
 
 export class Elem {
     constructor(
@@ -63,9 +60,20 @@ export class Elem {
         return this.handle;
     }
 
+    async isExist(): Promise<boolean> {
+        return (await this.tryFind()) !== null;
+    }
+
     async isDisplayed(): Promise<boolean> {
-        await this.tryFind();
-        return this.handle !== null
+        return (await this.isExist()) && 
+        await this.eval(el => {
+            const style = window.getComputedStyle(el);
+
+            return style &&
+            style.display !== 'none' && 
+            style.visibility !== 'hidden' &&
+            style.opacity !== '0'
+        });
     }
 
     async click() {
@@ -88,9 +96,20 @@ export class Elem {
         await this.eval(e => (<any>e).value = "");
     }
 
+    /**
+     * Text with Keyboard keys in parthenses []
+     * Examples: 
+     * - "sometext"
+     * - "sometext[Enter]" 
+     * - "sometext[Ctrl+A] [Backspace]", etc.
+     * 
+     * Keys list are in Keys.js file:
+     * 
+     * @param text
+     */
     async typeText(text: string) {
-        await this.find();
-        await this.handle.type(text);
+        await this.focus();
+        await new Keyboard(page).type(text);
     }
 
     async waitFor(timeout: number = 10000) {
@@ -120,11 +139,6 @@ export class Elem {
         await this.find();
         await this.handle.tap();
     }
-
-    // async press() {
-    //     await this.find();
-    //     await this.foundEl.press();
-    // }
 
     async boundingBox() {
         await this.find();
@@ -159,7 +173,7 @@ export class Elem {
 
     private async verifyHandle() {
         try {
-            await this.handle.executionContext().evaluate(() => { }); //make sure handle is available
+            await this.handle.executionContext().evaluate(() => { }); //make sure handle is still available
             return this.handle;
         } catch (e) {
             this.handle = null; // reset found state

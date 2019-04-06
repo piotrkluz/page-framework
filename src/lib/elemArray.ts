@@ -19,6 +19,14 @@ export class ElemArray {
         return retArr;
     }
 
+    async forEach(func: (el: Elem) => Promise<void>): Promise<void> {
+        const els = await this.findAll();
+
+        for(let i = 0; i < els.length; i++) {
+            await func(els[i]);
+        }
+    }
+
     async findAll(): Promise<Elem[]> {
         const parentEl = this.parent
             ? (await this.parent.find()).handle

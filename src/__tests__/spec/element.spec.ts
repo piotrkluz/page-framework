@@ -1,4 +1,4 @@
-import { $, $x, $$, $$x } from "../../lib/BasePage";
+import { $, $x, $$, $$x } from "../../lib/basePage";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
 import { Elem } from "../../lib/elem";
@@ -52,8 +52,6 @@ describe("Matcher element", () => {
 
         it("Not displayed element", () => {
             shouldThrow(() => $(".not-displayed").click());
-            // $(".not-displayed").click().catch(e => expect(e.message)
-            // .toMatch("Node is either not visible or not an HTMLElement"));
         })
     })
 
@@ -90,33 +88,42 @@ describe("Matcher element", () => {
 
             expect(await input.getValue()).toBe(TYPE_TEXT + TYPE_TEXT);
         })
-        it.skip("Keyboard schroucut", async () => { 
-            expect(false).toBeTruthy(); // TODO
-        })
     })
 
     describe("isDisplayed", () => {
-        it("invalid selector", async () => {
-            $("////invalid").isDisplayed().catch(e => expect(e.message).toBe("DUPA"))
-         })
         it("not exist element", async () => { 
             expect(await $(".not-exist").isDisplayed()).toBeFalsy();
         })
+
         it("element display:none", async () => {
             expect(await $(".display-none").isDisplayed()).toBeFalsy();
         })
+
         it("element visibility:hidden", async () => {
             expect(await $(".hidden").isDisplayed()).toBeFalsy();
         })
+
         it("visible zero-height element", async () => {
             expect(await $(".zero").isDisplayed()).toBeTruthy();
         })
+
         it("visible empty element", async () => {
             expect(await $(".empty").isDisplayed()).toBeTruthy();
         })
+
         it("visible element with content", async () => {
             expect(await $(".elem").isDisplayed()).toBeTruthy();
-            
         })
+    })
+
+    describe("isExist", () => {
+        it("element display:none", async () => {
+            expect(await $(".display-none").isExist()).toBeTrue();
+        })
+        it("element visibility:hidden", async () => {
+            expect(await $(".hidden").isExist()).toBeTrue();
+        })
+
+        
     })
 })
