@@ -9,30 +9,27 @@ Page object / page modules implementation, for puppeteer. 100% TypeScript.
 - [x] Fluent interface for selectors
 - [x] Refactor -> create separated Matcher class
 - [x] Add documentation with examples in JavaScript / TypeScript
-- [x] used puppeteer-keyboard
+- [x] use puppeteer-keyboard
 - [ ] $(".elem").module(ModuleName)
 
 
 # What You can do with this lib (examples)
-- Define page elements using CSS, XPATH in the same locator
-- Define page modules classes that composes few elements and its behavior (for example: fields, forms etc.)
-- Use predefined elements within library (and extends their behavior if You wish)
-- Compose Page Objects using defined modules and Elements
+- Define page elements using CSS, XPATH in the same locator like ```$(".img").$x("../../div")```
+- Define page modules classes that composes few elements and its behavior
+- Use predefined elements within library (and extends their behavior by simply extending class)
+- Compose Page Objects using predefined modules and Elements
 
 ## And also:
 - evaluate JavaScript directly in browser and get results from it (works for all kinds of selectors)
 - easily iterate thorough array of elements
 - easily run test on multiple browsers (thanks to ```jest``` test runner)
-- 
+
 
 # Getting started
 ## 1. Install package
 ```bash
-yarn add puppeteer puppeteer-page-object
-```
-OR using npm: 
-```
-npm install puppeteer puppeteer-page-object
+npm i puppeteer puppeteer-page-object
+#OR yarn add puppeteer puppeteer-page-object
 ```
 
 ## 2. Using package:
@@ -53,25 +50,31 @@ describe("My test", () => {
         await Browser.init({ headless: false });
     })
 
-    beforeAll(async () => {
-        await Browser.disconnect(); // don't forget to close the browser :)
+    afterAll(async () => {
+        await Browser.disconnect(); // don't forget to close the browser.
     })
 
     it("my test", async () => {
-        await $(".elem").click();
+        page.open("http://www.example.com")
+        await $("h1").click();
     })
 })
 ```
 
 
 #Examples
-## Using only matchers
+## Use only matchers (without page object)
 ```javascript
-// We can create set of matchers without putting them in page object
+// We can create set of matchers independly
 const button = $(".myButton")
 const form = $("//div[@class='container']").$(".my-form");
 const loginField = form.$(".login")
 const passwordField = form.$(".pass")
+
+await button.click();
+await loginField.type("mylogin[Enter]")
+await passwordField.type("mypass123")
+
 ```
 
 

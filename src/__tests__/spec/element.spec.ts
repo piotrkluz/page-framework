@@ -1,8 +1,8 @@
-import { $, $x, $$, $$x } from "../../lib/basePage";
+import { $, $x, $$, $$x } from "../..";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
 import { Elem } from "../../lib/elem";
-import { shouldThrow } from "../matchers";
+import { shouldThrow } from "../lib";
 
 declare var page: Page;
 const ELEM_TEXT = "Some text."

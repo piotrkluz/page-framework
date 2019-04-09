@@ -7,19 +7,25 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug Tests",
-            "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-            "cwd": "${workspaceRoot}",
+            "name": "Jest Current file",
+            "program": "${workspaceFolder}\\node_modules\\jest\\bin\\jest",
             "args": [
-                // "--i"
-            ]
+                "--runInBand",
+                "--config=${workspaceFolder}\\jest.config.js"            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
         },
         {
             "name": "Current TS File",
             "type": "node",
             "request": "launch",
-            "args": ["${relativeFile}"],
-            "runtimeArgs": ["-r", "ts-node/register",],
+            "args": [
+                "${relativeFile}"
+            ],
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register",
+            ],
             "smartStep": true,
             "cwd": "${workspaceRoot}",
             "protocol": "inspector",

@@ -1,0 +1,1642 @@
+{
+  "program": {
+    "fileInfos": {
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts": {
+        "version": "c180f01a2aaac7d733001fa1db20f881dc83cf33096b674a1546ca26762e69da",
+        "signature": "c180f01a2aaac7d733001fa1db20f881dc83cf33096b674a1546ca26762e69da"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "c8665e66018917580e71792b91022bcaf53fb946fab4aaf8dfb0738ed564db88",
+        "signature": "c8665e66018917580e71792b91022bcaf53fb946fab4aaf8dfb0738ed564db88"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "2edd3ddf436ef8e12df876dcae4ecd6a8748577944c477bf4b20d5596e0c9843",
+        "signature": "2edd3ddf436ef8e12df876dcae4ecd6a8748577944c477bf4b20d5596e0c9843"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "6994c583b66862deca24d7bbf77297d95b9d3da8160dbd9beef6b847cf7c1376",
+        "signature": "6994c583b66862deca24d7bbf77297d95b9d3da8160dbd9beef6b847cf7c1376"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+        "version": "4c892766803cef795d73d69aee436dc7a80157163e0cf35e6d0e86917cbd42f3",
+        "signature": "4c892766803cef795d73d69aee436dc7a80157163e0cf35e6d0e86917cbd42f3"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
+        "signature": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
+        "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "384f66a3422d80014c51de2682159bb26f1e35854029880ccd5f6d1f00e6a36d",
+        "signature": "384f66a3422d80014c51de2682159bb26f1e35854029880ccd5f6d1f00e6a36d"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0",
+        "signature": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3",
+        "signature": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "4d1f39313a169b8599b8817688f504b56ba8204c2ebafd03f66ff77ddb1899a4",
+        "signature": "4d1f39313a169b8599b8817688f504b56ba8204c2ebafd03f66ff77ddb1899a4"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "7c07d934680d0e33275a44d22fb11a4ff31d46c8c26a8d056828a478753f1efe",
+        "signature": "7c07d934680d0e33275a44d22fb11a4ff31d46c8c26a8d056828a478753f1efe"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4",
+        "signature": "ff8ad203e83338289b0f5defc1a5b5c253fb7d251b464db497383f915a0df3f4"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "42102aaeb1bfec213be1e9777466a6d551eeba8567fed18c0cdbca8c35e3c6e4",
+        "signature": "42102aaeb1bfec213be1e9777466a6d551eeba8567fed18c0cdbca8c35e3c6e4"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "1b820b57379c726f94af50cd60053674af53ff9d079c1563cc70071e8b757dd0",
+        "signature": "1b820b57379c726f94af50cd60053674af53ff9d079c1563cc70071e8b757dd0"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62",
+        "signature": "efe049114bad1035b0aa9a4a0359f50ab776e3897c411521e51d3013079cbd62"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8",
+        "signature": "e7780d04cd4120ee554c665829db2bbdd6b947cbaa3c150b7d9ea74df3beb2e8"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "f6e0c89daaf72eac38dfb1d5ef0972183f7f26a68da15bfe5bcb7cfccf0c7db8",
+        "signature": "f6e0c89daaf72eac38dfb1d5ef0972183f7f26a68da15bfe5bcb7cfccf0c7db8"
+      },
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.bigint.d.ts": {
+        "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
+        "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest-diff/index.d.ts": {
+        "version": "6ecb326999da47034eff85653423767152858fbb7acf0433f7603c9abf1e3f06",
+        "signature": "6ecb326999da47034eff85653423767152858fbb7acf0433f7603c9abf1e3f06"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/types.d.ts": {
+        "version": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7",
+        "signature": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/index.d.ts": {
+        "version": "b2c5ded6320c45c5d3e1c481c5d2808adf24dd1a59ffc944b72a418e95da5b17",
+        "signature": "b2c5ded6320c45c5d3e1c481c5d2808adf24dd1a59ffc944b72a418e95da5b17"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest/index.d.ts": {
+        "version": "a6ea3b29104efd7a3dd497d3496306f8350eb2ab05b7fa1b25fe82f9391bf879",
+        "signature": "a6ea3b29104efd7a3dd497d3496306f8350eb2ab05b7fa1b25fe82f9391bf879"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-extended/types/index.d.ts": {
+        "version": "cbeced255ad832d16d1cf2661f8842f525799641b18047e26032223260a8e1fb",
+        "signature": "cbeced255ad832d16d1cf2661f8842f525799641b18047e26032223260a8e1fb"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/global.d.ts": {
+        "version": "c7acd801f1eb6be2a6750d6bb408df334f30e69dee36a47b9dd9ea04010b923f",
+        "signature": "c7acd801f1eb6be2a6750d6bb408df334f30e69dee36a47b9dd9ea04010b923f"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts": {
+        "version": "1c782928643804f5963667b03e6bdfc484f9868524178c8071dba2735cf2963d",
+        "signature": "c731266973238ba53f59bda4468b208006ff0edcc9212c0b34966a8c3d4cf311"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/globals.d.ts": {
+        "version": "bb1712d53ccdcdb6e98e5099ff6a978bc66f41e4234f6727dba5bfdbe9201d4e",
+        "signature": "bb1712d53ccdcdb6e98e5099ff6a978bc66f41e4234f6727dba5bfdbe9201d4e"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/assert.d.ts": {
+        "version": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f",
+        "signature": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/async_hooks.d.ts": {
+        "version": "138476cfdccbb9e2c7e06602bc216af843a56c4f3469a79106bc660ba94bd66a",
+        "signature": "138476cfdccbb9e2c7e06602bc216af843a56c4f3469a79106bc660ba94bd66a"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/buffer.d.ts": {
+        "version": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
+        "signature": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts": {
+        "version": "c5a3c14cb11afb48d405562e6843145caa67c60be9738f408cd7977ce30a0b00",
+        "signature": "c5a3c14cb11afb48d405562e6843145caa67c60be9738f408cd7977ce30a0b00"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/cluster.d.ts": {
+        "version": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a",
+        "signature": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/console.d.ts": {
+        "version": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d",
+        "signature": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/constants.d.ts": {
+        "version": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598",
+        "signature": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/crypto.d.ts": {
+        "version": "b64b53a0a1959c0081b1f0ddf874eb7b09b5a7e2be2376fe0b275fc8646424b1",
+        "signature": "b64b53a0a1959c0081b1f0ddf874eb7b09b5a7e2be2376fe0b275fc8646424b1"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dgram.d.ts": {
+        "version": "beedf72ae8a4176d262e464b70544021a8cd765e21f58325eae5d132a3eb359d",
+        "signature": "beedf72ae8a4176d262e464b70544021a8cd765e21f58325eae5d132a3eb359d"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts": {
+        "version": "92bd533d635f967b198fde9bc789996370f0db3322306646d961f64e67ed5b7a",
+        "signature": "92bd533d635f967b198fde9bc789996370f0db3322306646d961f64e67ed5b7a"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/domain.d.ts": {
+        "version": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa",
+        "signature": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts": {
+        "version": "cff7f1ff41519a28adfedb85b9d91325e13d7993bebcfd0dd9ce30c3ed1240bb",
+        "signature": "cff7f1ff41519a28adfedb85b9d91325e13d7993bebcfd0dd9ce30c3ed1240bb"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts": {
+        "version": "dbe39c84ad40acd4b4259bc035aa5870ab08bcab899d2f7089c7922a434cf02d",
+        "signature": "dbe39c84ad40acd4b4259bc035aa5870ab08bcab899d2f7089c7922a434cf02d"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts": {
+        "version": "61af0c7f7be9887d42de91222b0d758fa9912027c2dbda957b749bcd43427b54",
+        "signature": "61af0c7f7be9887d42de91222b0d758fa9912027c2dbda957b749bcd43427b54"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http2.d.ts": {
+        "version": "28fdca6c7a3d5dd62c738461051ef345b50d167efab39dceb2fcc9a079db1b07",
+        "signature": "28fdca6c7a3d5dd62c738461051ef345b50d167efab39dceb2fcc9a079db1b07"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/https.d.ts": {
+        "version": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6",
+        "signature": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/inspector.d.ts": {
+        "version": "7f71142177d3c98370b31751e3d320c9743ed28eee215acb88d8e0d2a31e321e",
+        "signature": "7f71142177d3c98370b31751e3d320c9743ed28eee215acb88d8e0d2a31e321e"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/module.d.ts": {
+        "version": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66",
+        "signature": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts": {
+        "version": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50",
+        "signature": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/os.d.ts": {
+        "version": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486",
+        "signature": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/path.d.ts": {
+        "version": "5fb30076f0e0e5744db8993648bfb67aadd895f439edad5cce039127a87a8a36",
+        "signature": "5fb30076f0e0e5744db8993648bfb67aadd895f439edad5cce039127a87a8a36"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/perf_hooks.d.ts": {
+        "version": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f",
+        "signature": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/process.d.ts": {
+        "version": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389",
+        "signature": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/punycode.d.ts": {
+        "version": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1",
+        "signature": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/querystring.d.ts": {
+        "version": "80c4d0b88eb9712f6cd30a672a8288f978afc8df652b4fdb434236b7836766ff",
+        "signature": "80c4d0b88eb9712f6cd30a672a8288f978afc8df652b4fdb434236b7836766ff"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/readline.d.ts": {
+        "version": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c",
+        "signature": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/repl.d.ts": {
+        "version": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157",
+        "signature": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts": {
+        "version": "8eb33193516c1805512396183374f3cfe7e0b1b87ec31f210259ea8d9cc13d44",
+        "signature": "8eb33193516c1805512396183374f3cfe7e0b1b87ec31f210259ea8d9cc13d44"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/string_decoder.d.ts": {
+        "version": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948",
+        "signature": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/timers.d.ts": {
+        "version": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
+        "signature": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts": {
+        "version": "8fd6756e8a6fac64089e19e4fbe822bcfafa62f79b237172288eaa1379e84083",
+        "signature": "8fd6756e8a6fac64089e19e4fbe822bcfafa62f79b237172288eaa1379e84083"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/trace_events.d.ts": {
+        "version": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662",
+        "signature": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tty.d.ts": {
+        "version": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4",
+        "signature": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts": {
+        "version": "431151f55411c3f27cf539b987a7d1de453188ed58e54bc946183d280d3444a2",
+        "signature": "431151f55411c3f27cf539b987a7d1de453188ed58e54bc946183d280d3444a2"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts": {
+        "version": "45dd52f3123d2189b981f92410c9d5d0ba1b4c257f2f98fdf983c48ec3132ab8",
+        "signature": "45dd52f3123d2189b981f92410c9d5d0ba1b4c257f2f98fdf983c48ec3132ab8"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/v8.d.ts": {
+        "version": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033",
+        "signature": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts": {
+        "version": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9",
+        "signature": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/worker_threads.d.ts": {
+        "version": "16de20ae20cd1d948409a56b55832f3d416c66c8cb44bb8475e1e9db14d8e402",
+        "signature": "16de20ae20cd1d948409a56b55832f3d416c66c8cb44bb8475e1e9db14d8e402"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/zlib.d.ts": {
+        "version": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9",
+        "signature": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/base.d.ts": {
+        "version": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
+        "signature": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts": {
+        "version": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c",
+        "signature": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/globals.d.ts": {
+        "version": "ce6b191c382ee19f23678b8c364484627bcf424e8f408357a2f5530fb8d52a45",
+        "signature": "ce6b191c382ee19f23678b8c364484627bcf424e8f408357a2f5530fb8d52a45"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/index.d.ts": {
+        "version": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c",
+        "signature": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts": {
+        "version": "5bde1af0f3137c63e4a9a2c48e869b57257d0b33e893be975fb0f23c630af13e",
+        "signature": "5bde1af0f3137c63e4a9a2c48e869b57257d0b33e893be975fb0f23c630af13e"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/lib/client.ts": {
+        "version": "dd8dc765eca725079b266d6427d49f757e89449c77912b9c51e65acf93c41051",
+        "signature": "7aa28dc006dd73f0e467384e5a5301b0ce2b647f69685baffe0b9166de077a92"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts": {
+        "version": "c3862242a5d98cf175c00db4f05248198bbe3a60338dab444898497a4d16235c",
+        "signature": "2549274e594a3f6b443fdfb2627742db79c3e9070b26f9304f2eb3ab62d1a4f4"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/utils/utils.ts": {
+        "version": "5e9a671d108ead5f0a0bfe6b30ce46bd40568897b4dbb48a5b204b3e9bed9334",
+        "signature": "25b5d55f5122d0d27fd3625c8ca57fa58f40a92ce80810f01d16f2f783926b76"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/puppeteer-keyboard/dist/index.d.ts": {
+        "version": "699f50e7837b0bbc35b1163334d3fb58b38ca96b89abc9a884065581eaa77fba",
+        "signature": "699f50e7837b0bbc35b1163334d3fb58b38ca96b89abc9a884065581eaa77fba"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/lib/elem.ts": {
+        "version": "f75a632f7670a1b90967eae2d6d70984743d2fba03eed32560d4f21087c4f7b9",
+        "signature": "d306c1870355188851ae1f9f77dcaea98b5eb6a9e033178975538c653da157bd"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts": {
+        "version": "f0884335525663a9eae48b45300c282fef1eb8de73e3b01d87253761dea4f9af",
+        "signature": "fcb9c3ba2b309406a90e69be18417d5ae50728bfa38debed08cdf5a888d5cab0"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts": {
+        "version": "29212f34b91107e0a3a835c2e753818531229bdfa6a6612eeabdc061a42c40ef",
+        "signature": "000851f5aabfbdd9ece5c50259654e6110b97cf8414c837e25b1741c02ff5d00"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/lib/page.ts": {
+        "version": "5bd385316fdabef0772a2905c0fd69388d49188ef6becb43293afe94023f21d6",
+        "signature": "4ab26a517970fb5e212b2f52da36a3edfb4de0704e85e7ea2032ab4a150e12d9"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/index.ts": {
+        "version": "d78e8a6ee3149c8e50b9ac5ba94e23127f3b4af383d685a76f217bec91bc04f1",
+        "signature": "d18bb20f2f5a394dc0d58151e4267a26497b94a5ee03430f74b8811c2e2bdd4d"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/matchers.ts": {
+        "version": "a5c4a24a9107622ba5447fa3c2effa875ad00b96a69e23f1350f0ee7792bf6cc",
+        "signature": "57d66a4e8ee76fc2edc59c183d09ac2e40a0ee24a348269164cee40761fa2890"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/element.spec.ts": {
+        "version": "6fe251d4390239fa2be98782e07b6904cd9e74a42da05c4e1713cec37a4edeae",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/keyboard.spec.ts": {
+        "version": "c3d706cd4be8edc1fb8ca6963df7fde1c970b2989766af0aaf7d80481d2db43e",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/matcher.spec.ts": {
+        "version": "f264e35f163229e874cd62b583827eab5ea15bf1e87e81dd05d3c2cfe519953f",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/modules.spec.ts": {
+        "version": "b4bdcb538d56f118a309a84d7363d337c475e0d20a767c68259337bf9cdb1679",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "c:/moje/projekty/puppeteer-page-object/src/utils/browserutils.ts": {
+        "version": "de2d9a86fecb581a85e95e725b74d4d6bd6ca8a33c7cae96931009876881b49f",
+        "signature": "d763558f1a03c1d0079beeda7fd209d30970c7c620fff136cf3400c9a03883af"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts": {
+        "version": "9eac0dd4de5669db2b8321dffa400b997f7b21181118efc7a2c1743d93d4be57",
+        "signature": "9eac0dd4de5669db2b8321dffa400b997f7b21181118efc7a2c1743d93d4be57"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__generator/index.d.ts": {
+        "version": "19fb2161edf60fbe73ee3650c1cee889df0525ed852eff2d5fa6e5480c132ae3",
+        "signature": "19fb2161edf60fbe73ee3650c1cee889df0525ed852eff2d5fa6e5480c132ae3"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "30b805fe6d4272d147fea35fd859bc5f3e13b7c9d762bd35948fe842919452a5",
+        "signature": "30b805fe6d4272d147fea35fd859bc5f3e13b7c9d762bd35948fe842919452a5"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "67fb81fcd13edc5410665fa72892dd0878654b54946e8b0f10af5adc234bfe8f",
+        "signature": "67fb81fcd13edc5410665fa72892dd0878654b54946e8b0f10af5adc234bfe8f"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__template/index.d.ts": {
+        "version": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8",
+        "signature": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__core/index.d.ts": {
+        "version": "9cf8e9d6b55ca6db5442191b1a107c613a59987692cfd59dc62e7be40ecbb326",
+        "signature": "9cf8e9d6b55ca6db5442191b1a107c613a59987692cfd59dc62e7be40ecbb326"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/istanbul-lib-coverage/index.d.ts": {
+        "version": "2e91ae1a0304062735f5d6f2e0b90d5f5bc11d73291d0a3783c79fd5ad9ac4c7",
+        "signature": "2e91ae1a0304062735f5d6f2e0b90d5f5bc11d73291d0a3783c79fd5ad9ac4c7"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/stack-utils/index.d.ts": {
+        "version": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49",
+        "signature": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49"
+      },
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/yargs/index.d.ts": {
+        "version": "8f3237f03af87871a18d49ff52dec94d71eabecca464d5f2a81e34b55fb60bb5",
+        "signature": "8f3237f03af87871a18d49ff52dec94d71eabecca464d5f2a81e34b55fb60bb5"
+      }
+    },
+    "options": {
+      "target": 2,
+      "module": 1,
+      "declaration": true,
+      "outDir": "C:/moje/projekty/puppeteer-page-object/dist",
+      "rootDir": "C:/moje/projekty/puppeteer-page-object/src",
+      "strict": false,
+      "noImplicitAny": false,
+      "incremental": true,
+      "sourceMap": true,
+      "watch": true,
+      "configFilePath": "C:/moje/projekty/puppeteer-page-object/tsconfig.json"
+    },
+    "referencedMap": {
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest-diff/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/types.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/types.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest-diff/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-extended/types/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/global.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/globals.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/assert.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/async_hooks.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/buffer.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/cluster.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/console.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/constants.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/crypto.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dgram.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/domain.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http2.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/https.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/inspector.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/module.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/os.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/path.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/perf_hooks.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/async_hooks.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/process.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/punycode.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/querystring.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/readline.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/repl.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/readline.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/string_decoder.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/timers.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/crypto.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/trace_events.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tty.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/querystring.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/v8.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/worker_threads.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/zlib.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/base.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/globals.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/assert.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/async_hooks.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/buffer.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/cluster.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/console.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/constants.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/crypto.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dgram.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/domain.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http2.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/https.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/inspector.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/module.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/os.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/path.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/perf_hooks.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/process.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/punycode.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/querystring.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/readline.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/repl.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/string_decoder.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/timers.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/trace_events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tty.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/v8.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/worker_threads.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/zlib.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/globals.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/globals.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/base.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/globals.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/client.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/client.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/utils/utils.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/puppeteer-keyboard/dist/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/elem.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/client.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/utils/utils.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/puppeteer-keyboard/dist/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/elem.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/page.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/index.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/page.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/matchers.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/element.spec.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/elem.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/__tests__/matchers.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/keyboard.spec.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/matcher.spec.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/__tests__/matchers.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/modules.spec.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/utils/browserutils.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/os.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/path.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__generator/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__traverse/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__template/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__core/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__generator/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__traverse/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__template/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/istanbul-lib-coverage/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/stack-utils/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/yargs/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest-diff/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/types.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/types.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest-diff/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-extended/types/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/global.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/globals.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/assert.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/async_hooks.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/buffer.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/cluster.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/console.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/constants.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/crypto.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dgram.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/domain.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http2.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/https.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/inspector.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/module.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/os.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/path.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/perf_hooks.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/async_hooks.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/process.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/punycode.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/querystring.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/readline.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/repl.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/readline.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/string_decoder.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/timers.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/crypto.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/trace_events.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tty.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/querystring.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/v8.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/worker_threads.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/zlib.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/base.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/globals.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/assert.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/async_hooks.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/buffer.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/cluster.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/console.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/constants.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/crypto.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dgram.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/domain.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http2.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/https.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/inspector.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/module.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/os.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/path.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/perf_hooks.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/process.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/punycode.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/querystring.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/readline.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/repl.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/string_decoder.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/timers.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/trace_events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tty.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/v8.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/worker_threads.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/zlib.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/globals.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/globals.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/base.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/globals.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/client.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/puppeteer-keyboard/dist/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/elem.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/elem.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/index.ts": [
+        "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts",
+        "c:/moje/projekty/puppeteer-page-object/src/lib/page.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/src/utils/browserutils.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__generator/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__traverse/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__template/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__core/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__generator/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__traverse/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__template/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/istanbul-lib-coverage/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/stack-utils/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/yargs/index.d.ts": [
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+        "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "c:/users/pkluz1/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest-diff/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/types.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-diff/build/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/jest/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/jest-extended/types/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/global.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/lib/selector.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/globals.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/assert.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/async_hooks.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/buffer.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/child_process.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/cluster.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/console.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/constants.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/crypto.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dgram.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/dns.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/domain.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/events.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/fs.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/http2.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/https.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/inspector.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/module.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/net.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/os.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/path.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/perf_hooks.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/process.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/punycode.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/querystring.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/readline.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/repl.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/stream.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/string_decoder.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/timers.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tls.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/trace_events.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/tty.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/url.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/util.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/v8.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/vm.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/worker_threads.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/zlib.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/base.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/util.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/globals.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/node/ts3.2/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/puppeteer/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/lib/client.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/lib/matcherarray.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/utils/utils.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/puppeteer-keyboard/dist/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/lib/elem.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/lib/matcher.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/lib/basematchers.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/lib/page.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/matchers.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/element.spec.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/keyboard.spec.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/matcher.spec.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/__tests__/spec/modules.spec.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/utils/browserutils.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/types/lib/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__generator/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__traverse/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@babel/parser/typings/babel-parser.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__template/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/babel__core/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/istanbul-lib-coverage/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/stack-utils/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/node_modules/@types/yargs/index.d.ts",
+      "c:/moje/projekty/puppeteer-page-object/src/index.ts"
+    ]
+  },
+  "version": "3.4.2"
+}

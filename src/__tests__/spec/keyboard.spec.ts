@@ -1,4 +1,4 @@
-import { $ } from "../../lib/basePage";
+import { $, $x, $$, $$x } from "../..";
 import * as server from "../testServer/server";
 import { Page } from "puppeteer";
 

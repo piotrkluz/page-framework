@@ -1,8 +1,8 @@
-import { $, $x, $$, $$x } from "../../lib/basePage";
+import { $, $x, $$, $$x } from "../..";
 import { Page } from "puppeteer";
 import { MatcherArray } from "../../lib/matcherArray";
 import * as server from "../testServer/server";
-import { shouldThrow } from "../matchers";
+import { shouldThrow } from "../lib";
 
 const H1 = "First";
 const LIST = [

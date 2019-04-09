@@ -9,8 +9,8 @@ declare var page: Page;
 
 export class Elem {
     constructor(
-        protected selector: Selector,
-        protected parent: Matcher = null,
+        public selector: Selector,
+        public parent: Matcher = null,
         public handle: ElementHandle<Element> = null) { }
 
     async find(): Promise<Elem> {
@@ -18,11 +18,11 @@ export class Elem {
             return this;
         }
 
-        const parentEl = this.parent
+        const parentHandle = this.parent
             ? (await this.parent.find()).handle
             : null;
 
-        this.handle = await Client.findOne(this.selector, parentEl);
+        this.handle = await Client.findOne(this.selector, parentHandle);
 
         if (this.handle === null) {
             this.throwNotFound();
@@ -44,10 +44,19 @@ export class Elem {
         return this.handle;
     }
 
+    /**
+     * Returns true if element exist in DOM.
+     */
     async isExist(): Promise<boolean> {
         return (await this.tryFind()) !== null;
     }
 
+    /**
+     * Check's if element is Exist in the DOM and have not style:
+     * - display: none
+     * - visibility: hidden
+     * - opacity: 0
+     */
     async isDisplayed(): Promise<boolean> {
         return (await this.isExist()) &&
             await this.eval(el => {
