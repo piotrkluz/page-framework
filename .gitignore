@@ -1,5 +1,9 @@
 yarn.lock
 node_modules
-*.log
+
 dist
 coverage
+
+#temp
+*.tsbuildinfo
+*.log

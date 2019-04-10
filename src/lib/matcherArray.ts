@@ -21,6 +21,19 @@ export class MatcherArray<M = Matcher> {
         return retArr;
     }
 
+    async filter(func: (el: M) => Promise<boolean>): Promise<M[]> {
+        const els = await this.findAll();
+
+        const outputArr: M[] = [];
+        for(let i = 0; i < els.length; i++) {
+            if(await func(els[i])) {
+                outputArr.push(els[i]);
+            }
+        }
+
+        return outputArr;
+    }
+
     async forEach(func: (el: M) => Promise<void>): Promise<void> {
         const els = await this.findAll();
 

@@ -2,7 +2,7 @@ import { $, $x, $$, $$x } from "../..";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
 import { Elem } from "../../lib/elem";
-import { shouldThrow } from "../lib";
+import { shouldThrow } from "../testLib";
 
 declare var page: Page;
 const ELEM_TEXT = "Some text."

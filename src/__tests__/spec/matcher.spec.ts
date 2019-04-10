@@ -2,7 +2,7 @@ import { $, $x, $$, $$x } from "../..";
 import { Page } from "puppeteer";
 import { MatcherArray } from "../../lib/matcherArray";
 import * as server from "../testServer/server";
-import { shouldThrow } from "../lib";
+import { shouldThrow } from "../testLib";
 
 const H1 = "First";
 const LIST = [
