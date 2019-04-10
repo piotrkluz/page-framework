@@ -1,4 +1,4 @@
-import { $, $x, $$, $$x } from "../..";
+import { $ } from "../..";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
 import { Elem } from "../../lib/elem";
@@ -123,7 +123,5 @@ describe("Matcher element", () => {
         it("element visibility:hidden", async () => {
             expect(await $(".hidden").isExist()).toBeTrue();
         })
-
-        
     })
 })

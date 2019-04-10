@@ -6,7 +6,7 @@ import * as path from "path";
 const WS_ENDPOINT = path.join(os.tmpdir(), "puppeteerEndpoint.txt");
 
 declare var page: Page;
-export default class BrowserUtils {
+export class BrowserUtils {
     /**
      * Initializes new browser instance OR connect to previously running one if possible.
      * Set globals:

@@ -1,4 +1,4 @@
-import { Selector, CssSelector, XPathSelector } from "./selector";
+import { Selector } from "./selector";
 import { ElementHandle, Page } from "puppeteer";
 import { Client } from "./client";
 import * as utils from "../utils/utils";

@@ -1,7 +1,4 @@
 import { Page as PuppeteerPage } from "puppeteer";
-import { CssSelector, XPathSelector } from "./selector";
-import { MatcherArray } from "./matcherArray";
-import { Matcher } from "./matcher";
 
 /** DECLARED GLOBAL VARIABLE */
 declare var page: PuppeteerPage;
