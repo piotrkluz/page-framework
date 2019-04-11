@@ -1,9 +1,9 @@
 export abstract class Selector {
     constructor(
         protected selector: string,
-        public nth: number = 1
+        public nthIndex: number = 0
         ) {
-            if (nth < 1) this.nth = 1; // ignore wrong selectors
+            if (nthIndex < 0) this.nthIndex = 0; // ignore wrong selectors
         }
 
     toString() {

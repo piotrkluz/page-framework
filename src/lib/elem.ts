@@ -22,7 +22,7 @@ export class Elem {
             ? (await this.parent.find()).handle
             : null;
 
-        this.handle = await utils.tryWaitFor(() => Client.findOne(this.selector, parentHandle), 5000);
+        this.handle = await Client.findOne(this.selector, parentHandle);
 
         if (this.handle === null) {
             this.throwNotFound();

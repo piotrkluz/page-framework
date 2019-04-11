@@ -8,32 +8,33 @@ export class Client {
             ? parentElement
             : page;
 
-        if (selector.nth == 1 && selector.constructor.name == "CssSelector") {
+        if (selector.nthIndex == 0 && selector.constructor.name == "CssSelector") {
             return await base.$(selector.toString());
         }
 
         const results = await this.findAll(selector, parentElement);
-        const result = results[selector.nth - 1];
+        const result = results[selector.nthIndex];
 
-        if (result == undefined) {
-            if (selector.nth == 0) {
-                throw new Error(`Not found any element: 
-                \nSELECTOR: ${selector.toString()}`)
-            }
-
-            if (results) {
-                throw new Error(`Requested element number ${selector.nth} not found.
-                Found only ${results.length} elementswith selector:
-                ${selector.toString()}               
-                `)
-            }
-
-            throw new Error(`Not found element:
-            \nINDEX: ${selector.nth} 
-            \nSELECTOR: ${selector.toString()}`);
+        if (result) {
+            return result;
         }
 
-        return result;
+        // generate fail message
+        if (selector.nthIndex == 0) {
+            throw new Error(`Not found any element: 
+            \nSELECTOR: ${selector.toString()}`)
+        }
+
+        if (results) {
+            throw new Error(`Requested element index: ${selector.nthIndex} not found.
+            Found only ${results.length} elements with selector:
+            ${selector.toString()}               
+            `)
+        }
+
+        throw new Error(`Not found element:
+        \nINDEX: ${selector.nthIndex} 
+        \nSELECTOR: ${selector.toString()}`);
     }
 
     static async findAll(selector: Selector, parentElement: ElementHandle<Element> = null): Promise<ElementHandle<Element>[]> {

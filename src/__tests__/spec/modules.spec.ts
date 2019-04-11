@@ -60,7 +60,7 @@ describe("Matcher element", () => {
         })
 
         it("Module with different selectors (CSS / XPATH).", async () => {
-            const container = $x("//ul[@class='users']", 1).module(UsersContainer);
+            const container = $x("//ul[@class='users']").module(UsersContainer);
             const users = container.$$(".user").module(User);
 
             expect(await users.map(u => u.name.getText())).toEqual(NAMES);

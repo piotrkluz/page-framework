@@ -7,16 +7,16 @@ export type Constructor<T> = new (...x: any[]) => T;
 export type ModuleConstructor<T> = new (selector: Selector, parent: Matcher, handle: ElementHandle<Element>) => T;
 
 export class Matcher extends Elem {
-    $(css: string, nth: number = 1) {
-        return new Matcher(new CssSelector(css, nth), this);
+    $(css: string, nthIndex: number = 0) {
+        return new Matcher(new CssSelector(css, nthIndex), this);
     }
 
     $$(css: string) {
         return new MatcherArray(new CssSelector(css), this, <ModuleConstructor<Matcher>>this.constructor)
     }
 
-    $x(xpath: string, nth: number = 1) {
-        return new Matcher(new XPathSelector(xpath, nth), this);
+    $x(xpath: string, nthIndex: number = 0) {
+        return new Matcher(new XPathSelector(xpath, nthIndex), this);
     }
 
     $$x(xpath: string) {

@@ -9,8 +9,8 @@ const LIST = [
     "list1", "list2",
     "list3", "list4"
 ]
-const N = 2;
-const Nth = LIST[N - 1];
+const INDEX = 2;
+const Nth = LIST[INDEX];
 
 declare var page: Page;
 
@@ -85,31 +85,32 @@ describe("Matcher element", () => {
     describe("nth elements", () => {
 
         it("CSS nth element", async () => {
-            const el = await $("ul.simple > li", N).getText();
+            const el = await $("ul.simple > li", INDEX).getText();
 
             expect(el).toBe(Nth);
         })
 
         it("XPATH nth element", async () => {
-            const el = await $x("//ul[@class='simple']/li", N).getText();
+            const el = await $x("//ul[@class='simple']/li", INDEX).getText();
 
             expect(el).toBe(Nth);
         })
 
         it("nth XPATH nested in CSS", async () => {
-            const el = await $("ul.simple").$x(`(/li)[${N}]`).getText();
+            const xpathNumber = INDEX + 1;
+            const el = await $("ul.simple").$x(`(/li)[${INDEX + 1}]`).getText();
 
             expect(el).toBe(Nth);
         })
 
         it("Nested nth CSS in Xpath", async () => {
-            const el = await $x("//ul[@class='simple']").$("li", N).getText();
+            const el = await $x("//ul[@class='simple']").$("li", INDEX).getText();
 
             expect(el).toBe(Nth);
         })
 
         it("Nested nth XPATH in Xpath", async () => {
-            const el = await $("ul.simple").$x("/li", N).getText();
+            const el = await $("ul.simple").$x("/li", INDEX).getText();
 
             expect(el).toBe(Nth);
         })
