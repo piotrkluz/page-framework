@@ -21,6 +21,7 @@
     "typescript": "^3.3.4000"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "bump-version": "tsc && jest && npm version minor"
   }
 }
