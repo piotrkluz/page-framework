@@ -1,17 +1,19 @@
 import { Page as PuppeteerPage } from "puppeteer";
+import { waitFor } from "../utils/utils";
 
 /** DECLARED GLOBAL VARIABLE */
 declare var page: PuppeteerPage;
 
 export class Page {
-    readonly URL: string;
+    constructor(
+        public URL: string
+    ) {}
 
     async open() {
         if (!this.URL) {
             throw new Error(`URL not set in page: ${this.constructor.name}`)
         }
-        await page.goto(this.URL)
-
+        await page.goto(this.URL);
         return this;
     }
 

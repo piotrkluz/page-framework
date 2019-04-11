@@ -69,8 +69,21 @@ export class Elem {
             });
     }
 
+    async haveClass(className: string): Promise<boolean> {
+        return this.eval(
+            (el, expectedName) => el.classList.contains(expectedName),
+            className)
+    }
+
     async click() {
         await this.find();
+        await this.handle.click();
+    }
+
+    async doubleClick(intervalMs = 50) {
+        await this.find();
+        await this.handle.click();
+        await this.sleep(intervalMs);
         await this.handle.click();
     }
 
@@ -113,9 +126,16 @@ export class Elem {
         await utils.waitFor(() => !this.isDisplayed(), timeout);
     }
 
-    async eval<R>(pageFunction: (element: Element) => R | Promise<R>): Promise<R> {
+    /**
+     * Resolve after given amount of [ms]
+     */
+    async sleep(ms: number): Promise<void> {
+        await utils.sleep(ms);
+    }
+
+    async eval<R>(pageFunction: (element: Element, ...args: any[]) => R | Promise<R>, ...args: any[]): Promise<R> {
         await this.find();
-        return await Client.eval(this.handle, pageFunction);
+        return await Client.eval(this.handle, pageFunction, ...args);
     }
 
     async focus() {

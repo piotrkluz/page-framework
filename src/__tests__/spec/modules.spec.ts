@@ -1,7 +1,7 @@
 import { $, $x, $$, $$x } from "../..";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
-import { Constructor, Module } from "../../lib/matcher";
+import { Module, ModuleConstructor } from "../../lib/matcher";
 
 const USER_NAME = "Johny Bravo";
 const USER_ADDRESS = "2856 Taylor St";
@@ -71,7 +71,7 @@ describe("Matcher element", () => {
             //let typescript to compile this wrong code
             // but it should crash in Runtime !
             const usr: unknown = WrongUser;
-            const fakeModule = <Constructor<Module>>usr;
+            const fakeModule = <ModuleConstructor<Module>>usr;
             
             expect(() => $(".user").module(fakeModule)).toThrow("WrongUser should extend 'Module' class.")
         })

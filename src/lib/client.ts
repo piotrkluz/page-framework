@@ -8,20 +8,20 @@ export class Client {
             ? parentElement
             : page;
 
-        if(selector.nth == 1 && selector.constructor.name == "CssSelector") {
+        if (selector.nth == 1 && selector.constructor.name == "CssSelector") {
             return await base.$(selector.toString());
         }
 
         const results = await this.findAll(selector, parentElement);
         const result = results[selector.nth - 1];
 
-        if(result == undefined) {
-            if(selector.nth == 0) {
+        if (result == undefined) {
+            if (selector.nth == 0) {
                 throw new Error(`Not found any element: 
                 \nSELECTOR: ${selector.toString()}`)
             }
 
-            if(results) {
+            if (results) {
                 throw new Error(`Requested element number ${selector.nth} not found.
                 Found only ${results.length} elementswith selector:
                 ${selector.toString()}               
@@ -30,7 +30,7 @@ export class Client {
 
             throw new Error(`Not found element:
             \nINDEX: ${selector.nth} 
-            \nSELECTOR: ${selector.toString()}`);                        
+            \nSELECTOR: ${selector.toString()}`);
         }
 
         return result;
@@ -39,32 +39,35 @@ export class Client {
     static async findAll(selector: Selector, parentElement: ElementHandle<Element> = null): Promise<ElementHandle<Element>[]> {
         const base = parentElement
             ? parentElement
-            : page;    
+            : page;
 
-            //css
-            if(selector.constructor.name == "CssSelector") {
-                return await base.$$(selector.toString())
-            } 
-            
-            // xpath
-            const fixedXpath = parentElement
-                ? this.fixNestedXpath(selector.toString()) //dot in xpath is required
-                : selector.toString()
+        //css
+        if (selector.constructor.name == "CssSelector") {
+            return await base.$$(selector.toString())
+        }
 
-            return await base.$x(fixedXpath);
+        // xpath
+        const fixedXpath = parentElement
+            ? this.fixNestedXpath(selector.toString()) //dot in xpath is required
+            : selector.toString()
+
+        return await base.$x(fixedXpath);
     }
 
-    static async eval<R>(elementHandle: ElementHandle<Element>, pageFunction: (element: Element) => R | Promise<R>): Promise<R> {
+    /**
+     * @param elementHandle Element to handle in browser context
+     * @param pageFunction Function to evaluate in browser context
+     * @param args Argument's to pass to pageFunction
+     */
+    static async eval<R>(
+        elementHandle: ElementHandle<Element>,
+        pageFunction: (element: Element, ...args: any[]) => R | Promise<R>,
+        ...args: any[]
+    ): Promise<R> {
         return await page.evaluate(
             pageFunction,
-            elementHandle
-        );
-    }
-
-    static async evalAll<R>(elementHandles: ElementHandle<Element>[], pageFunction: (element: Element) => R | Promise<R>): Promise<R> {
-        return await page.evaluate(
-            pageFunction,
-            ...elementHandles
+            elementHandle,
+            ...args
         );
     }
 
@@ -80,11 +83,11 @@ export class Client {
      * (/div/h1) -> returns (./div/h1)[1]
      */
     private static fixNestedXpath(xpath: string) {
-        if(/^\//.test(xpath)) {
+        if (/^\//.test(xpath)) {
             return "." + xpath; // add dot
         }
 
-        if(/[^\.\/]\//.test(xpath)) {
+        if (/[^\.\/]\//.test(xpath)) {
             return xpath.replace(/\//, "./"); //add dot 
         }
     }

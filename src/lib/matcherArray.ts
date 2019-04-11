@@ -1,12 +1,12 @@
 import { Selector } from "./selector";
 import { Client } from "./client";
-import { Matcher, Constructor } from "./matcher";
+import { Matcher, ModuleConstructor } from "./matcher";
 
 export class MatcherArray<M = Matcher> {
     constructor(
         private selector: Selector,
         protected parent: Matcher = null,
-        private matcherClass: Constructor<M> = <Constructor<M>><any>Matcher //compile hack
+        private matcherClass: ModuleConstructor<M> = <ModuleConstructor<M>><any>Matcher //compile hack
     ) { }
 
     async map<T>(func: (el: M) => Promise<T>): Promise<T[]> {
@@ -52,7 +52,7 @@ export class MatcherArray<M = Matcher> {
         return found.map(el => new this.matcherClass(this.selector, this.parent, el));
     }
 
-    module<newM extends Matcher>(matcherClass: Constructor<newM>): MatcherArray<newM> {
+    module<newM extends Matcher>(matcherClass: ModuleConstructor<newM>): MatcherArray<newM> {
         return new MatcherArray(
             this.selector, 
             this.parent, 
