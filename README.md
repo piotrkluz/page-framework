@@ -194,7 +194,9 @@ await elems.forEach(e => console.log(e.getText()))
 - [x] use puppeteer-keyboard
 - [x] $(".elem").module(ModuleName)
 - [x] Add unit tests
-- [ ] Refactor -> Extract Browser client behind interface
 - [ ] Create examples folder with basic use cases
 - [ ] Implement iterator: $$(".col")[2] -> should return matcher: $(".col", 3)
-- [ ] Implement ModuleArray -> count()
+- [x] Implement MatcherArray -> count()
+- [ ] REFACTOR: 
+  - [ ] Extract Browser client behind interface
+  - [ ] encapsulate selectors hierarchy in one master-class (without "parent" fields)

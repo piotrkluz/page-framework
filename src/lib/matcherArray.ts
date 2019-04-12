@@ -42,6 +42,10 @@ export class MatcherArray<M = Matcher> {
         }
     }
 
+    async count(): Promise<number> {
+        return (await this.findAll()).length;
+    }
+
     async findAll(): Promise<M[]> {
         const parentEl = this.parent
             ? (await this.parent.find()).handle
@@ -49,7 +53,7 @@ export class MatcherArray<M = Matcher> {
 
         const found = await Client.findAll(this.selector, parentEl);
 
-        return found.map(el => new this.matcherClass(this.selector, this.parent, el));
+        return found.map((el, index) => new this.matcherClass(this.selector.newWithIndex(index), this.parent, el));
     }
 
     module<newM extends Matcher>(matcherClass: ModuleConstructor<newM>): MatcherArray<newM> {
@@ -57,6 +61,7 @@ export class MatcherArray<M = Matcher> {
             this.selector, 
             this.parent, 
             matcherClass
+            
         );
     }
 }

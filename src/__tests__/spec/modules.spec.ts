@@ -37,7 +37,6 @@ describe("Matcher element", () => {
         it("Use module fields", async () => {
             const user = $(".user").module(User);
 
-            await user.address.focus();
             await user.address.waitFor();
             await user.avatar.getText();
         })

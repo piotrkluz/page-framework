@@ -97,7 +97,6 @@ describe("Matcher element", () => {
         })
 
         it("nth XPATH nested in CSS", async () => {
-            const xpathNumber = INDEX + 1;
             const el = await $("ul.simple").$x(`(/li)[${INDEX + 1}]`).getText();
 
             expect(el).toBe(Nth);
@@ -116,11 +115,38 @@ describe("Matcher element", () => {
         })
     })
 
-    describe("Negative scenario's", () => {
+    describe("Element disappeared and redrawed", () => {
+        it("Should re-search if element is deleted (and other one match selector)", async () => {
+            const el = $(".redraw > p");
 
+            await $(".redraw").eval(e => {
+                e.removeChild(e.querySelector("p")); //remove element
+
+                // create new
+                let newOne = document.createElement("p"); 
+                newOne.innerHTML = "RECREATED AT: " + Date.now();
+                e.appendChild(newOne)
+            })
+
+            await el.click(); // handle is removed, but it should re-find newOne element and click on it
+            expect(await el.getText()).toMatch("RECREATED AT:");
+        })
+
+        it("Should not find deleted element", async () => {
+            const el = await $(".redraw > p");
+
+            await $(".redraw").eval(e => {
+                e.removeChild(e.querySelector("p"));
+            })
+        
+            expect(el.click()).rejects.toThrow();
+        })
+    })
+
+    describe("Negative scenario's", () => {
         it("WRONG CSS", async () => {
             for (const wrongCss of ["//h1", "lol z", "xDe "]) {
-                await shouldThrow(async () => $(wrongCss).find());
+                await shouldThrow(async () => $(wrongCss).getText());
             }
         })
 

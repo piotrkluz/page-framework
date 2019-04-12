@@ -13,13 +13,19 @@ export class Elem {
         public parent: Matcher = null,
         public handle: ElementHandle<Element> = null) { }
 
-    async find(): Promise<Elem> {
-        if (await this.verifyHandle()) {
+    /**
+     * Finds element on the page and do nothing else.
+     * If element is previously found, it's handle will be used. 
+     * 
+     * @param useCache If false => forces search element even if it's already found. 
+     */
+    async find(useCache = true): Promise<Elem> {
+        if (this.handle && useCache) {
             return this;
         }
 
         const parentHandle = this.parent
-            ? (await this.parent.find()).handle
+            ? (await this.parent.find(useCache)).handle
             : null;
 
         this.handle = await Client.findOne(this.selector, parentHandle);
@@ -31,34 +37,45 @@ export class Elem {
         return this;
     }
 
-    async tryFind(): Promise<Elem> {
+    /**
+     * Return null if not found.
+     * @example
+     * 
+     * const found = await $(".elem").tryFind();
+     * if(found) {
+     *     await found.click()
+     * }
+     */
+    async tryFind(useCache = true): Promise<Elem> {
         try {
-            return await this.find()
+            return await this.find(useCache)
         } catch (e) {
             return null;
         }
     }
 
-    async getElement() {
-        await this.find();
-        return this.handle;
+    /**
+     * Returns native puppeteer element handle. 
+     */
+    async getElement(): Promise<ElementHandle<Element>> {
+        return await this.findAndDo(handle => handle);
     }
 
     /**
      * Returns true if element exist in DOM.
      */
     async isExist(): Promise<boolean> {
-        return (await this.tryFind()) !== null;
+        return (await this.tryFind(false)) !== null;
     }
 
     /**
-     * Check's if element is Exist in the DOM and have not style:
+     * Return's true if element is exist and not have following styles
      * - display: none
      * - visibility: hidden
      * - opacity: 0
      */
     async isDisplayed(): Promise<boolean> {
-        return (await this.isExist()) &&
+        return await this.isExist() &&
             await this.eval(el => {
                 const style = window.getComputedStyle(el);
 
@@ -69,6 +86,10 @@ export class Elem {
             });
     }
 
+    /**
+     * Return's true if element have given class. 
+     * @param className 
+     */
     async haveClass(className: string): Promise<boolean> {
         return this.eval(
             (el, expectedName) => el.classList.contains(expectedName),
@@ -76,52 +97,64 @@ export class Elem {
     }
 
     async click() {
-        await this.find();
-        await this.handle.click();
+        await this.findAndDo(handle => handle.click());
     }
 
-    async doubleClick(intervalMs = 50) {
-        await this.find();
-        await this.handle.click();
-        await this.sleep(intervalMs);
-        await this.handle.click();
+    async doubleClick(timeBetweenClicksMs = 50) {
+        await this.findAndDo(async handle => {
+            await handle.click();
+            await this.sleep(timeBetweenClicksMs);
+            await handle.click();
+        });
     }
 
+    /**
+     * Return's element **textContent** property.
+     */
     async getText(): Promise<string> {
-        await this.find();
         return await this.eval(e => e.textContent);
     }
 
+    /**
+     * Actual input value.
+     */
     async getValue(): Promise<string> {
-        await this.find();
         return await this.eval(e => (<any>e).value);
     }
 
+    /**
+     * Clear element value. 
+     */
     async clear(): Promise<void> {
-        await this.find();
         await this.eval(e => (<any>e).value = "");
     }
 
     /**
      * Text with Keyboard keys in parthenses []
-     * Examples: 
+     * @param text Examples: 
      * - "sometext"
      * - "sometext[Enter]" 
      * - "sometext[Ctrl+A] [Backspace]", etc.
      * 
-     * Keys list are in Keys.js file:
-     * 
-     * @param text
+     * Full available keys list: 
+     * https://github.com/GoogleChrome/puppeteer/blob/master/lib/USKeyboardLayout.js
      */
     async typeText(text: string) {
-        await this.focus();
+        this.findAndDo(h => h.focus())
         await new Keyboard(page).type(text);
     }
 
+    /**
+     * Wait for element to be exist on page.
+     */
     async waitFor(timeout: number = 10000) {
-        return await utils.waitFor(() => this.find(), timeout);
+        await utils.waitFor(() => this.isExist(), timeout);
     }
 
+    /**
+     * Wait for disappear element from page. 
+     * uses **this.isDisplayed()** method.
+     */
     async waitForDisappear(timeout: number = 10000) {
         await utils.waitFor(() => !this.isDisplayed(), timeout);
     }
@@ -133,44 +166,43 @@ export class Elem {
         await utils.sleep(ms);
     }
 
+    /**
+     * Evaluate given JavaScript in browser context. 
+     * 
+     * @example
+     * //log "hello" in browser console
+     * $(".elem").eval(el => console.log("hello")) 
+     * 
+     * // return value from browser
+     * const html = $(".elem").eval(el => el.innerHTML) 
+     * 
+     * // pass params
+     * const myValue = "123"
+     * $(".elem").eval((el, param) => console.log(param), myValue) // will log "123" in browser console
+     */
     async eval<R>(pageFunction: (element: Element, ...args: any[]) => R | Promise<R>, ...args: any[]): Promise<R> {
-        await this.find();
-        return await Client.eval(this.handle, pageFunction, ...args);
+        return this.findAndDo(handle => {
+            return Client.eval(handle, pageFunction, ...args);
+        })
     }
 
-    async focus() {
-        await this.find();
-        await this.handle.focus();
-    }
+    /**
+     * First tries to evaluate passed function using previously found (cached) handle for save time. 
+     * 
+     * Using cached handle can cause errors related to redraw element like "Node is detached from document"
+     * If such error occur. Tries to find element one more time and re-evaluate
+     */
+    private async findAndDo<T>(func: (handle: ElementHandle<Element>) => T | Promise<T>): Promise<T> {
+        if (!this.handle) {
+            await this.find();
+        }
 
-    async hover() {
-        await this.find();
-        await this.handle.hover();
-    }
-
-    async tap() {
-        await this.find();
-        await this.handle.tap();
-    }
-
-    async boundingBox() {
-        await this.find();
-        await this.handle.boundingBox();
-    }
-
-    async boxModel() {
-        await this.find();
-        await this.handle.boxModel();
-    }
-
-    async getProperty(name: string) {
-        await this.find();
-        await this.handle.getProperty(name);
-    }
-
-    async getProperties() {
-        await this.find();
-        await this.handle.getProperties();
+        try {
+            return await func(this.handle)
+        } catch (e) {
+            await this.find(false); //re-find without cache
+            return await func(this.handle);
+        }
     }
 
     private throwNotFound() {
@@ -182,20 +214,6 @@ export class Elem {
         msg += "\nNOT FOUND SELECTOR: " + this.selector.toString();
 
         throw new Error(msg);
-    }
-
-    /**
-     * Most cost-effective way to check if element handle is still available.
-     * It takes approx 2-3ms
-     */
-    private async verifyHandle() {
-        try {
-            await this.handle.executionContext().evaluate(() => { }); //make sure handle is still available
-            return this.handle;
-        } catch (e) {
-            this.handle = null; // reset found state
-            return null;
-        }
     }
 
     private allSelectors(): string[] {
