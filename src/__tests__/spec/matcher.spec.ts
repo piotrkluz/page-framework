@@ -10,6 +10,8 @@ const LIST = [
 ]
 const INDEX = 2;
 const Nth = LIST[INDEX];
+const WRONG_CSS = "//h1";
+const WRONG_XPATH = ".h1";
 
 declare var page: Page;
 
@@ -144,21 +146,19 @@ describe("Matcher element", () => {
 
     describe("Negative scenario's", () => {
         it("WRONG CSS", async () => {
-            for (const wrongCss of ["//h1", "lol z", "xDe "]) {
-                expect($(wrongCss).getText()).rejects.toThrow();
-            }
+            await shouldThrow(() => $(WRONG_XPATH).find(), "Wrong CSS selector")
         })
 
         it("Wrong XPATH should throw Exception", async () => {
-            for (const wrongXpath of ["h1", "lol", "///"]) {
-                expect($(wrongXpath).find()).rejects.toThrow();
-            }
+            await shouldThrow(() => $x(WRONG_XPATH).find(), "Wrong XPATH selector")
         })
 
-        it("Wrong CSS should throw Exception", async () => {
-            for (const wrongCss of ["////h1", "", "//h1"]) {
-                expect($(wrongCss).find()).rejects.toThrow()
-            }
+        it("Wrong CSS Array", async () => {
+            await shouldThrow(() => $$(WRONG_CSS).findAll(), "Wrong CSS selector")
+        })
+
+        it("Wrong XPATH Array", async () => {
+            await shouldThrow(() => $$x(WRONG_XPATH).findAll(), "Wrong XPATH selector.")
         })
     })
 })
@@ -169,4 +169,19 @@ async function verifySimpleList(els: MatcherArray) {
 
     const elsMap = await els.map(async (e) => await e.getText());
     expect(elsMap).toEqual(LIST);
+}
+
+async function shouldThrow(func, msg) {
+    try {
+        await func();
+    } catch(e) {
+        if(e.message.indexOf(msg) > -1) {
+            return;
+        }
+        fail(`Function: ${func.toString()} throws error, but message not match: \n
+        RECEIVED MESSAGE: ${e.message}\n
+        EXPECTED MESSAGE: ${msg}`)
+    }
+
+    fail(`Function: ${func.toString()} \ndidn't throw error with message: ${msg}`)
 }

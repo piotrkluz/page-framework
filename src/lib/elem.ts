@@ -24,14 +24,18 @@ export class Elem {
             return this;
         }
 
-        const parentHandle = this.parent
-            ? (await this.parent.find(useCache)).handle
-            : null;
+        try {
+            const parentHandle = this.parent
+                ? (await this.parent.find(useCache)).handle
+                : null;
 
-        this.handle = await Client.findOne(this.selector, parentHandle);
-
+            this.handle = await Client.findOne(this.selector, parentHandle);
+        } catch(e) {
+            throw new NotFoundError(this);
+        }
+        
         if (this.handle === null) {
-            this.throwNotFound();
+            throw new NotFoundError(this);
         }
 
         return this;
@@ -140,7 +144,7 @@ export class Elem {
      * https://github.com/GoogleChrome/puppeteer/blob/master/lib/USKeyboardLayout.js
      */
     async typeText(text: string) {
-        this.findAndDo(h => h.focus())
+        await this.findAndDo(h => h.focus())
         await new Keyboard(page).type(text);
     }
 
@@ -205,18 +209,7 @@ export class Elem {
         }
     }
 
-    private throwNotFound() {
-        let msg;
-        msg += this.parent
-            ? "\nFOUND PARENT: " + this.parent.allSelectors().join(" ==> ")
-            : "";
-
-        msg += "\nNOT FOUND SELECTOR: " + this.selector.toString();
-
-        throw new Error(msg);
-    }
-
-    private allSelectors(): string[] {
+    allSelectors(): string[] {
         return this.allParents().map(e => e.selector.toString());
     }
 
@@ -230,3 +223,16 @@ export class Elem {
             : [this]
     }
 }
+
+class NotFoundError extends Error {
+    constructor(elem: Elem) {
+        let msg;
+        msg += elem.parent
+            ? "\nFOUND PARENT: " + elem.parent.allSelectors().join(" ==> ")
+            : "";
+
+        msg += "\nNOT FOUND SELECTOR: " + elem.selector.toString();
+
+        super(msg);
+    }
+} 
