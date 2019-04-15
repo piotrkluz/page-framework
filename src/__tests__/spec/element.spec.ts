@@ -2,7 +2,6 @@ import { $ } from "../..";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
 import { Elem } from "../../lib/elem";
-import { shouldThrow } from "../testLib";
 
 declare var page: Page;
 const ELEM_TEXT = "Some text."
@@ -51,7 +50,7 @@ describe("Matcher element", () => {
         })
 
         it("Not displayed element", () => {
-            shouldThrow(() => $(".not-displayed").click());
+            expect($(".not-displayed").click()).rejects.toThrow();
         })
     })
 

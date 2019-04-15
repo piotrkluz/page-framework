@@ -2,7 +2,6 @@ import { $, $x, $$, $$x } from "../..";
 import { Page } from "puppeteer";
 import { MatcherArray } from "../../lib/matcherArray";
 import * as server from "../testServer/server";
-import { shouldThrow } from "../testLib";
 
 const H1 = "First";
 const LIST = [
@@ -123,7 +122,7 @@ describe("Matcher element", () => {
                 e.removeChild(e.querySelector("p")); //remove element
 
                 // create new
-                let newOne = document.createElement("p"); 
+                let newOne = document.createElement("p");
                 newOne.innerHTML = "RECREATED AT: " + Date.now();
                 e.appendChild(newOne)
             })
@@ -138,7 +137,7 @@ describe("Matcher element", () => {
             await $(".redraw").eval(e => {
                 e.removeChild(e.querySelector("p"));
             })
-        
+
             expect(el.click()).rejects.toThrow();
         })
     })
@@ -146,23 +145,19 @@ describe("Matcher element", () => {
     describe("Negative scenario's", () => {
         it("WRONG CSS", async () => {
             for (const wrongCss of ["//h1", "lol z", "xDe "]) {
-                await shouldThrow(async () => $(wrongCss).getText());
+                expect($(wrongCss).getText()).rejects.toThrow();
             }
         })
 
         it("Wrong XPATH should throw Exception", async () => {
             for (const wrongXpath of ["h1", "lol", "///"]) {
-                await shouldThrow(
-                    () => $x(wrongXpath).find()
-                );
+                expect($(wrongXpath).find()).rejects.toThrow();
             }
         })
 
         it("Wrong CSS should throw Exception", async () => {
             for (const wrongCss of ["////h1", "", "//h1"]) {
-                await shouldThrow(
-                    () => $(wrongCss).find()
-                );
+                expect($(wrongCss).find()).rejects.toThrow()
             }
         })
     })
