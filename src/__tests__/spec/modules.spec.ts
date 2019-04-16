@@ -1,7 +1,7 @@
 import { $, $x, $$, $$x } from "../..";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
-import { Module, ModuleConstructor } from "../../lib/matcher";
+import { Module, ModuleConstructor } from "../../lib/Module";
 
 const USER_NAME = "Johny Bravo";
 const USER_ADDRESS = "2856 Taylor St";

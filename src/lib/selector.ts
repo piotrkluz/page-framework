@@ -2,12 +2,10 @@ export abstract class Selector {
     constructor(
         protected selector: string,
         public nthIndex: number = 0
-    ) {
-        if (nthIndex < 0) this.nthIndex = 0; // ignore wrong selectors
-    }
+    ) { }
 
     newWithIndex(index: number) {
-        return this.constructor.name == "CssSelector"
+        return this instanceof CssSelector
             ? new CssSelector(this.selector, index)
             : new XPathSelector(this.selector, index);
     }
