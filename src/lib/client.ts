@@ -1,33 +1,47 @@
 import { Selector, CssSelector } from "./Selector";
 import { ElementHandle, Page } from "puppeteer";
 import { FindError, NotFoundError } from "./Errors";
+import { Matcher } from "./Matcher";
 
 declare var page: Page;
 
+/**
+ * Client for handling puppeteer requests.
+ */
 export class Client {
-    static async find(selectors: Selector[]): Promise<ElementHandle<Element>> {
+
+    /**
+     * Find first element by given Matcher.
+     */
+    static async find(matcher: Matcher): Promise<ElementHandle<Element>> {
+        const selectors = matcher.getAll();
+
         let handle: ElementHandle;
         for (const [index, selector] of selectors.entries()) {
             try {
                 handle = await this.doFind(selector, handle);
-            } catch(e) {
-                throw new FindError(selectors, index, e);
+            } catch (e) {
+                throw new FindError(matcher, index, e);
             }
-            
-            if(!handle) {
-                throw new NotFoundError(selectors, index);
+
+            if (!handle) {
+                throw new NotFoundError(matcher, index);
             }
         }
 
         return handle;
     }
 
-    static async findAll(selectors: Selector[]): Promise<ElementHandle<Element>[]> {
+    /**
+     * Find all elements by given Matcher.
+     */
+    static async findAll(matcher: Matcher): Promise<ElementHandle<Element>[]> {
+        const selectors = matcher.getAll();
         let lastSelector = selectors.pop();
 
         let parent: ElementHandle;
         if (selectors.length > 0) {
-            parent = await this.find(selectors);
+            parent = await this.find(new Matcher(selectors));
         }
 
         return await this.doFindAll(lastSelector, parent);

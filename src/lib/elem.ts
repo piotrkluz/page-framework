@@ -3,7 +3,6 @@ import * as utils from "../utils/utils";
 import { Keyboard } from "puppeteer-keyboard";
 import { Matcher } from "./Matcher";
 import { Client } from "./Client";
-import { FindError } from "./Errors";
 
 declare var page: Page;
 
@@ -23,7 +22,7 @@ export class Elem {
             return this;
         }
         
-        this.handle = await Client.find(this.matcher.getAll())
+        this.handle = await Client.find(this.matcher)
         
         return this;
     }
@@ -163,10 +162,10 @@ export class Elem {
      * @example
      * //log "hello" in browser console
      * $(".elem").eval(el => console.log("hello")) 
-     * 
+     * @example
      * // return value from browser
      * const html = $(".elem").eval(el => el.innerHTML) 
-     * 
+     * @example
      * // pass params
      * const myValue = "123"
      * $(".elem").eval((el, param) => console.log(param), myValue) // will log "123" in browser console
@@ -178,10 +177,13 @@ export class Elem {
     }
 
     /**
-     * First tries to evaluate passed function using previously found (cached) handle for save time. 
+     * First tries to evaluate passed function using previously found (cached) handle. 
      * 
-     * Using cached handle can cause errors related to redraw element like "Node is detached from document"
-     * If such error occur. Tries to find element one more time and re-evaluate
+     * Using cached handle can cause errors related to redraw element like 
+     * - "Node is detached from document", 
+     * -  Page navigation error
+     * - etc.
+     * If such error occur. Tries to find element one more time without cache and re-evaluate.
      */
     private async findAndDo<T>(func: (handle: ElementHandle<Element>) => T | Promise<T>): Promise<T> {
         if (!this.handle) {

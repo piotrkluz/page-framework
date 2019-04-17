@@ -1,15 +1,23 @@
-import { Selector } from "./Selector";
 import { Matcher } from "./Matcher";
+import chalk from "chalk";
 
 export class FindError extends Error {
-    constructor(selectors: Selector[], index: number, internalError?: Error) {
-        const msg = [
-            "NOT FOUND. MSG TO BE DONE.",
-            new Matcher(selectors).toString(),
-            internalError || internalError.name,
-            internalError || internalError.message
-        ]
-        super(msg.join("\n---"));
+    constructor(matcher: Matcher, index: number, internalError?: Error) {
+        const selectors = matcher.getAll();
+
+        const all = selectors.map(s => s.toString()).join(" -> ");
+
+        const fail = selectors[index].toString();
+        const position = all.indexOf(fail.toString());
+
+        const msg = `
+            NOT FOUND SELECTOR: ${chalk.red.bold(fail.toString())},
+            IN: 
+            ${chalk.green(all)}
+            ${" ".repeat(position) + chalk.red.bold("^")}
+
+        `
+        super(msg);
     }
 }
 

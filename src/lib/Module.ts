@@ -9,7 +9,7 @@ export type ModuleConstructor<T> = new (matcher: Matcher, handle?: ElementHandle
 
 export class Module extends Elem {
     /**
-     * Create new **Matcher**, with this as parent. 
+     * Create new **Module**, with this as parent. 
      * 
      * Uses **CSS** selector
      * 
@@ -25,7 +25,7 @@ export class Module extends Elem {
     }
 
     /**
-     * Create new **Matcher**, with this as parent. 
+     * Create new **Module**, with this as parent. 
      * 
      * Uses **XPATH** selector
      * 
@@ -42,7 +42,7 @@ export class Module extends Elem {
     }
 
     /**
-     * Create new **Matcher array** with this matcher as parent.
+     * Create new **Module array** with this matcher as parent.
      * 
      * Uses **CSS** selector
      * 
@@ -58,7 +58,7 @@ export class Module extends Elem {
     }
 
     /**
-     * Create new **Matcher array** with this matcher as parent.
+     * Create new **Module array** with this matcher as parent.
      * 
      * Uses **XPATH** selector
      * 
@@ -76,18 +76,18 @@ export class Module extends Elem {
 
     /**
      * @example
-     * class MyModule extends Module {
+     * class MyElem extends Module {
      * subField = this.$(".elem")
      * }
      * 
      * $(".elem").module(MyModule)
      */
-    module<T extends Module>(module: ModuleConstructor<T>): T {
-        if (module.prototype instanceof Module === false) {
-            throw new Error(`${module.name} should extend 'Module' class.`);
+    module<T extends Module>(moduleClass: ModuleConstructor<T>): T {
+        if (moduleClass.prototype instanceof Module === false) {
+            throw new Error(`${moduleClass.name} should extend 'Module' class.`);
         }
 
-        return new module(this.matcher, this.handle);
+        return new moduleClass(this.matcher, this.handle);
     }
 
     static from<T extends Module>(from: Module): T {

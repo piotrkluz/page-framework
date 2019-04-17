@@ -18,7 +18,7 @@ export class Matcher {
      * Makes copy of Matcher with set different index of last element.
      * @param nthIndex 
      */
-    setIndex(nthIndex: number) {
+    newWithIndex(nthIndex: number) {
         const selectors = this.getAll();
 
         const last = selectors.pop();
