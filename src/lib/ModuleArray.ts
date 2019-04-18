@@ -11,10 +11,10 @@ export class ModuleArray<M = Module> {
     /**
      * @param func
      * @example
-     * $$("li").map(el => el.getText()); // if one line async-await keywords can be skipped
+     * await $$("li").map(el => el.getText()); // if one arg async-await keywords can be skipped
      * 
      * @example
-     * $$("li").map(async el => {
+     * await $$("li").map(async el => {
      *     await el.click()
      *     return await el.getText();
      * });
@@ -53,9 +53,11 @@ export class ModuleArray<M = Module> {
     }
 
     /**
+     * Executes async/sync function for each element.
+     * 
      * @param func
      * @example
-     * $$("li").forEach(el => el.click());
+     * await $$("li").forEach(el => el.click());
      */
     async forEach(func: (el: M) => Promise<void>): Promise<void> {
         const els = await this.findAll();
@@ -65,10 +67,17 @@ export class ModuleArray<M = Module> {
         }
     }
 
+    /**
+     * @example
+     * const c = await $$("li").count()
+     */
     async count(): Promise<number> {
         return (await this.findAll()).length;
     }
 
+    /**
+     * Find and return array of elements.
+     */
     async findAll(): Promise<M[]> {
         const found = await Client.findAll(this.matcher);
 

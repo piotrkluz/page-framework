@@ -1,5 +1,4 @@
 import { Page as PuppeteerPage } from "puppeteer";
-import { waitFor } from "../utils/utils";
 
 /** DECLARED GLOBAL VARIABLE */
 declare var page: PuppeteerPage;
