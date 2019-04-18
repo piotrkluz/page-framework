@@ -1,16 +1,14 @@
-import { Selector } from "./selector";
 import { ElementHandle, Page } from "puppeteer";
-import { Client } from "./client";
 import * as utils from "../utils/utils";
 import { Keyboard } from "puppeteer-keyboard";
-import { Matcher } from "./matcher";
+import { Matcher } from "./Matcher";
+import { Client } from "./Client";
 
 declare var page: Page;
 
 export class Elem {
     constructor(
-        public selector: Selector,
-        public parent: Matcher = null,
+        public matcher: Matcher,
         public handle: ElementHandle<Element> = null) { }
 
     /**
@@ -23,21 +21,9 @@ export class Elem {
         if (this.handle && useCache) {
             return this;
         }
-
-        try {
-            const parentHandle = this.parent
-                ? (await this.parent.find(useCache)).handle
-                : null;
-
-            this.handle = await Client.findOne(this.selector, parentHandle);
-        } catch(e) {
-            throw new NotFoundError(this);
-        }
         
-        if (this.handle === null) {
-            throw new NotFoundError(this);
-        }
-
+        this.handle = await Client.find(this.matcher)
+        
         return this;
     }
 
@@ -176,10 +162,10 @@ export class Elem {
      * @example
      * //log "hello" in browser console
      * $(".elem").eval(el => console.log("hello")) 
-     * 
+     * @example
      * // return value from browser
      * const html = $(".elem").eval(el => el.innerHTML) 
-     * 
+     * @example
      * // pass params
      * const myValue = "123"
      * $(".elem").eval((el, param) => console.log(param), myValue) // will log "123" in browser console
@@ -191,10 +177,13 @@ export class Elem {
     }
 
     /**
-     * First tries to evaluate passed function using previously found (cached) handle for save time. 
+     * First tries to evaluate passed function using previously found (cached) handle. 
      * 
-     * Using cached handle can cause errors related to redraw element like "Node is detached from document"
-     * If such error occur. Tries to find element one more time and re-evaluate
+     * Using cached handle can cause errors related to redraw element like 
+     * - "Node is detached from document", 
+     * -  Page navigation error
+     * - etc.
+     * If such error occur. Tries to find element one more time without cache and re-evaluate.
      */
     private async findAndDo<T>(func: (handle: ElementHandle<Element>) => T | Promise<T>): Promise<T> {
         if (!this.handle) {
@@ -204,35 +193,9 @@ export class Elem {
         try {
             return await func(this.handle)
         } catch (e) {
+            //TODO add if -> StaleElemntException or NavigationException
             await this.find(false); //re-find without cache
             return await func(this.handle);
         }
     }
-
-    allSelectors(): string[] {
-        return this.allParents().map(e => e.selector.toString());
-    }
-
-    /**
-     * Map inheritance hierarchy into array of elements: 
-     * [..., grandparent, parent, child]
-     */
-    private allParents(): Elem[] {
-        return this.parent
-            ? [...this.allParents(), this]
-            : [this]
-    }
 }
-
-class NotFoundError extends Error {
-    constructor(elem: Elem) {
-        let msg;
-        msg += elem.parent
-            ? "\nFOUND PARENT: " + elem.parent.allSelectors().join(" ==> ")
-            : "";
-
-        msg += "\nNOT FOUND SELECTOR: " + elem.selector.toString();
-
-        super(msg);
-    }
-} 

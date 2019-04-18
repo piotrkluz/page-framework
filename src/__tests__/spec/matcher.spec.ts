@@ -1,7 +1,7 @@
 import { $, $x, $$, $$x } from "../..";
 import { Page } from "puppeteer";
-import { MatcherArray } from "../../lib/matcherArray";
 import * as server from "../testServer/server";
+import { ModuleArray } from "../../lib/ModuleArray";
 
 const H1 = "First";
 const LIST = [
@@ -146,24 +146,24 @@ describe("Matcher element", () => {
 
     describe("Negative scenario's", () => {
         it("WRONG CSS", async () => {
-            await shouldThrow(() => $(WRONG_XPATH).find(), "Wrong CSS selector")
+            await shouldThrow(() => $(WRONG_XPATH).find())
         })
 
         it("Wrong XPATH should throw Exception", async () => {
-            await shouldThrow(() => $x(WRONG_XPATH).find(), "Wrong XPATH selector")
+            await shouldThrow(() => $x(WRONG_XPATH).find())
         })
 
         it("Wrong CSS Array", async () => {
-            await shouldThrow(() => $$(WRONG_CSS).findAll(), "Wrong CSS selector")
+            await shouldThrow(() => $$(WRONG_CSS).findAll())
         })
 
         it("Wrong XPATH Array", async () => {
-            await shouldThrow(() => $$x(WRONG_XPATH).findAll(), "Wrong XPATH selector.")
+            await shouldThrow(() => $$x(WRONG_XPATH).findAll())
         })
     })
 })
 
-async function verifySimpleList(els: MatcherArray) {
+async function verifySimpleList(els: ModuleArray) {
     const found = await els.findAll();
     expect(found.length).toEqual(LIST.length);
 
@@ -171,17 +171,12 @@ async function verifySimpleList(els: MatcherArray) {
     expect(elsMap).toEqual(LIST);
 }
 
-async function shouldThrow(func, msg) {
+async function shouldThrow(func) {
     try {
         await func();
     } catch(e) {
-        if(e.message.indexOf(msg) > -1) {
-            return;
-        }
-        fail(`Function: ${func.toString()} throws error, but message not match: \n
-        RECEIVED MESSAGE: ${e.message}\n
-        EXPECTED MESSAGE: ${msg}`)
+        return;
     }
 
-    fail(`Function: ${func.toString()} \ndidn't throw error with message: ${msg}`)
+    fail(`Function: ${func.toString()} \ndidn't throw error`)
 }

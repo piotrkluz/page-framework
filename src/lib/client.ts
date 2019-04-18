@@ -1,58 +1,50 @@
-import { Selector } from "./selector";
+import { Selector, CssSelector } from "./Selector";
 import { ElementHandle, Page } from "puppeteer";
+import { FindError, NotFoundError } from "./Errors";
+import { Matcher } from "./Matcher";
 
 declare var page: Page;
+
+/**
+ * Client for handling puppeteer requests.
+ */
 export class Client {
-    static async findOne(selector: Selector, parentElement: ElementHandle<Element> = null): Promise<ElementHandle<Element>> {
-        const base: Page | ElementHandle<Element> = parentElement
-            ? parentElement
-            : page;
 
-        if (selector.nthIndex == 0 && selector.constructor.name == "CssSelector") {
-            return await base.$(selector.toString());
+    /**
+     * Find first element by given Matcher.
+     */
+    static async find(matcher: Matcher): Promise<ElementHandle<Element>> {
+        const selectors = matcher.getAll();
+
+        let handle: ElementHandle;
+        for (const [index, selector] of selectors.entries()) {
+            try {
+                handle = await this.doFind(selector, handle);
+            } catch (e) {
+                throw new FindError(matcher, index, e);
+            }
+
+            if (!handle) {
+                throw new NotFoundError(matcher, index);
+            }
         }
 
-        const results = await this.findAll(selector, parentElement);
-        const result = results[selector.nthIndex];
-
-        if (result) {
-            return result;
-        }
-
-        // generate fail message
-        if (selector.nthIndex == 0) {
-            throw new Error(`Not found any element: 
-            \nSELECTOR: ${selector.toString()}`)
-        }
-
-        if (results) {
-            throw new Error(`Requested element index: ${selector.nthIndex} not found.
-            Found only ${results.length} elements with selector:
-            ${selector.toString()}               
-            `)
-        }
-
-        throw new Error(`Not found element:
-        \nINDEX: ${selector.nthIndex} 
-        \nSELECTOR: ${selector.toString()}`);
+        return handle;
     }
 
-    static async findAll(selector: Selector, parentElement: ElementHandle<Element> = null): Promise<ElementHandle<Element>[]> {
-        const base = parentElement
-            ? parentElement
-            : page;
+    /**
+     * Find all elements by given Matcher.
+     */
+    static async findAll(matcher: Matcher): Promise<ElementHandle<Element>[]> {
+        const selectors = matcher.getAll();
+        let lastSelector = selectors.pop();
 
-        //css
-        if (selector.constructor.name == "CssSelector") {
-            return await base.$$(selector.toString())
+        let parent: ElementHandle;
+        if (selectors.length > 0) {
+            parent = await this.find(new Matcher(selectors));
         }
 
-        // xpath
-        const fixedXpath = parentElement
-            ? this.fixNestedXpath(selector.toString()) //dot in xpath is required
-            : selector.toString()
-
-        return await base.$x(fixedXpath);
+        return await this.doFindAll(lastSelector, parent);
     }
 
     /**
@@ -72,24 +64,19 @@ export class Client {
         );
     }
 
-    /**
-     * To work properly with nested elements. 
-     * Xpath selector should have dot at the beginning. dot means "current node"
-     * Explanation:
-     * page.$("div").$x("//elements-inside-div") - matches all elements on the page
-     * page.$("div").$x(".//elements-inside-div") - matches elements inside div (as expected)
-     * 
-     * for example: 
-     * //div/h1 -> returns .//div/h1
-     * (/div/h1) -> returns (./div/h1)[1]
-     */
-    private static fixNestedXpath(xpath: string) {
-        if (/^\//.test(xpath)) {
-            return "." + xpath; // add dot
-        }
+    private static async doFind(selector: Selector, handle?: ElementHandle): Promise<ElementHandle<Element>> {
+        const base = handle || page;
 
-        if (/[^\.\/]\//.test(xpath)) {
-            return xpath.replace(/\//, "./"); //add dot 
-        }
+        return selector.nthIndex === 0 && selector instanceof CssSelector
+            ? await base.$(selector.toString())
+            : (await this.doFindAll(selector, handle))[selector.nthIndex];
+    }
+
+    private static async doFindAll(selector: Selector, handle?: ElementHandle): Promise<ElementHandle<Element>[]> {
+        const base = handle || page;
+
+        return selector instanceof CssSelector
+            ? await base.$$(selector.toString())
+            : await base.$x(selector.toString());
     }
 }

@@ -1,4 +1,4 @@
-import { CssSelector } from "../../lib/selector";
+import { CssSelector } from "../../lib/Selector";
 
 describe("Selector", () => {
     it("Copy selector CSS", () => {
