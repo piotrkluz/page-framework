@@ -1,7 +1,7 @@
 import { Module } from "./Module";
 import { ModuleArray } from "./ModuleArray";
 import { CssSelector, XPathSelector } from "./Selector";
-import { Matcher } from "./matcher";
+import { Matcher } from "./Matcher";
 
 /**
  * Return new Module with CSS Matcher

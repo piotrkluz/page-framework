@@ -1,4 +1,4 @@
-import { ElementHandle, Page } from "puppeteer";
+import { ElementHandle, Page, ClickOptions } from "puppeteer";
 import * as utils from "../utils/utils";
 import { Keyboard } from "puppeteer-keyboard";
 import { Matcher } from "./Matcher";
@@ -86,15 +86,21 @@ export class Elem {
             className)
     }
 
-    async click() {
-        await this.findAndDo(handle => handle.click());
+    /**
+     * @example
+     * $(".el").click()
+     * $(".el").click({delay: 40, "right"})
+     */
+    async click(options?: ClickOptions) {
+        await this.findAndDo(handle => handle.click(options));
     }
 
-    async doubleClick(timeBetweenClicksMs = 50) {
+    /**
+     * Schroucut to .click({clickCount: 2, delay })
+     */
+    async doubleClick(delay = 50) {
         await this.findAndDo(async handle => {
-            await handle.click();
-            await this.sleep(timeBetweenClicksMs);
-            await handle.click();
+            await handle.click({clickCount: 2, delay });
         });
     }
 

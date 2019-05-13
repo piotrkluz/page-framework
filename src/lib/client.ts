@@ -1,6 +1,6 @@
 import { Selector, CssSelector } from "./Selector";
 import { ElementHandle, Page } from "puppeteer";
-import { FindError, NotFoundError } from "./Errors";
+import { FindError, NotFoundError, NotFoundNthError, NotFoundArrayError } from "./Errors";
 import { Matcher } from "./Matcher";
 
 declare var page: Page;
@@ -21,6 +21,9 @@ export class Client {
             try {
                 handle = await this.doFind(selector, handle);
             } catch (e) {
+                if (e instanceof NotFoundNthError) {
+                    throw new NotFoundArrayError(e, matcher)
+                }
                 throw new FindError(matcher, index, e);
             }
 
@@ -67,9 +70,21 @@ export class Client {
     private static async doFind(selector: Selector, handle?: ElementHandle): Promise<ElementHandle<Element>> {
         const base = handle || page;
 
-        return selector.nthIndex === 0 && selector instanceof CssSelector
-            ? await base.$(selector.toString())
-            : (await this.doFindAll(selector, handle))[selector.nthIndex];
+        let index = selector.nthIndex;
+        if(index === 0 && selector instanceof CssSelector) {
+            return await base.$(selector.toString())
+        }
+
+        const allFound = await this.doFindAll(selector, handle);
+        if (index < 0) {
+            index += allFound.length;
+        }
+
+        if(index < 0 || index >= allFound.length) {
+            throw new NotFoundNthError(allFound.length, index);
+        }
+
+        return allFound[index];
     }
 
     private static async doFindAll(selector: Selector, handle?: ElementHandle): Promise<ElementHandle<Element>[]> {
