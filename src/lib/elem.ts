@@ -92,6 +92,10 @@ export class Elem {
         await this.findAndDo(handle => handle.click({clickCount: 2, delay }));
     }
 
+    async hover() {
+        await this.findAndDo(handle => handle.hover());
+    }
+
     /**
      * Return's element **textContent** property.
      */
