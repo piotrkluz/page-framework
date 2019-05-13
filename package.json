@@ -23,6 +23,7 @@
   },
   "scripts": {
     "test": "jest",
-    "bump-version": "tsc && jest && npm version minor"
+    "bump-version": "tsc && jest && npm version minor",
+    "bump-version-patch": "tsc && jest && npm version patch"
   }
 }
