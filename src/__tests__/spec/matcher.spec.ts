@@ -119,6 +119,7 @@ describe("Matcher element", () => {
     describe("Element disappeared and redrawed", () => {
         it("Should re-search if element is deleted (and other one match selector)", async () => {
             const el = $(".redraw > p");
+            await el.find();
 
             await $(".redraw").eval(e => {
                 e.removeChild(e.querySelector("p")); //remove element
