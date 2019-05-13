@@ -87,11 +87,11 @@ export class Module extends Elem {
             throw new Error(`${moduleClass.name} should extend 'Module' class.`);
         }
 
-        return new moduleClass(this.matcher, this.handle);
+        return new moduleClass(this.matcher);
     }
 
     static from<T extends Module>(from: Module): T {
-        return <T>new this(from.matcher, from.handle)
+        return <T>new this(from.matcher)
     }
 
     /**
@@ -103,7 +103,7 @@ export class Module extends Elem {
      * 
      * for example: 
      * //div/h1 -> returns .//div/h1
-     * (/div/h1) -> returns (./div/h1)[1]
+     * (/div/h1)[1] -> returns (./div/h1)[1]
      */
     private fixNestedXpath(xpath: string) {
         if (/^\//.test(xpath)) {

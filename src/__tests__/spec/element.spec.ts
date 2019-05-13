@@ -1,7 +1,6 @@
 import { $ } from "../..";
 import { Page } from "puppeteer";
 import * as server from "../testServer/server";
-import { Module } from "../../lib/Module";
 
 declare var page: Page;
 const ELEM_TEXT = "Some text."
@@ -21,7 +20,8 @@ describe("Matcher element", () => {
 
     describe("tryFind", () => {
         it("exists", async () => {
-            expect(await $(".exist").tryFind()).toBeInstanceOf(Module);
+            const el = await $(".exist").tryFind();
+            expect(el.constructor.name).toEqual("ElementHandle");
         })
         it("not exists", async () => {
             expect(await $(".not-exist").tryFind()).toBeNull();

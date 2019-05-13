@@ -24,7 +24,7 @@ export class Task extends Module {
     }
 
     async delete(): Promise<void> {
-        await (await (await this.find(false)).getElement()).hover();
+        await (await this.find()).hover();
         await this.deleteButton.click();
     }
 

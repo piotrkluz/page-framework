@@ -8,23 +8,13 @@ declare var page: Page;
 
 export class Elem {
     constructor(
-        public matcher: Matcher,
-        public handle: ElementHandle<Element> = null) { }
+        public matcher: Matcher) { }
 
     /**
      * Finds element on the page and do nothing else.
-     * If element is previously found, it's handle will be used. 
-     * 
-     * @param useCache If false => forces search element even if it's already found. 
      */
-    async find(useCache = true): Promise<Elem> {
-        if (this.handle && useCache) {
-            return this;
-        }
-        
-        this.handle = await Client.find(this.matcher)
-        
-        return this;
+    async find(): Promise<ElementHandle> {
+        return await Client.find(this.matcher)
     }
 
     /**
@@ -36,9 +26,9 @@ export class Elem {
      *     await found.click()
      * }
      */
-    async tryFind(useCache = true): Promise<Elem> {
+    async tryFind(): Promise<ElementHandle> {
         try {
-            return await this.find(useCache)
+            return await this.find()
         } catch (e) {
             return null;
         }
@@ -55,7 +45,7 @@ export class Elem {
      * Returns true if element exist in DOM.
      */
     async isExist(): Promise<boolean> {
-        return (await this.tryFind(false)) !== null;
+        return (await this.tryFind()) !== null;
     }
 
     /**
@@ -99,9 +89,7 @@ export class Elem {
      * Schroucut to .click({clickCount: 2, delay })
      */
     async doubleClick(delay = 50) {
-        await this.findAndDo(async handle => {
-            await handle.click({clickCount: 2, delay });
-        });
+        await this.findAndDo(handle => handle.click({clickCount: 2, delay }));
     }
 
     /**
@@ -183,25 +171,9 @@ export class Elem {
     }
 
     /**
-     * First tries to evaluate passed function using previously found (cached) handle. 
-     * 
-     * Using cached handle can cause errors related to redraw element like 
-     * - "Node is detached from document", 
-     * -  Page navigation error
-     * - etc.
-     * If such error occur. Tries to find element one more time without cache and re-evaluate.
+     * Evaluate function of found element handle.
      */
     private async findAndDo<T>(func: (handle: ElementHandle<Element>) => T | Promise<T>): Promise<T> {
-        if (!this.handle) {
-            await this.find();
-        }
-
-        try {
-            return await func(this.handle)
-        } catch (e) {
-            //TODO add if -> StaleElemntException or NavigationException
-            await this.find(false); //re-find without cache
-            return await func(this.handle);
-        }
+        return await func(await this.find())
     }
 }
