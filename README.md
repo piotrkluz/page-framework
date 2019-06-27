@@ -1,4 +1,4 @@
-# puppeteer-page-framework
+# page-framework
 Page object / page modules implementation, for puppeteer. 100% TypeScript.
 
 # Description
@@ -24,73 +24,10 @@ npm i puppeteer page-framework
 ```
 
 ## 2. Using package:
-Only one requirement from library is **puppeteer page** instance in global scope.
-The easiest way to do it is use bundled initializer.
+Only one requirement from library is **page**(from puppeteer) in global scope.
+We recommend ***jest*** test frameworkto run tests, there is ready solution (jest-puppeteer): https://jestjs.io/docs/en/puppeteer.
 
-> **NOTE:** If you are using ***jest***, there is ready solution (jest-puppeteer): https://jestjs.io/docs/en/puppeteer.
-> With it you can skip this point.
-
-
-```javascript
-//SOMEWHERE AT THE BEGINNING OF THE SCRIPT
-const BrowserUtils = require("page-framework").BrowserUtils;
-
-(async () => {
-    await BrowserUtils.initBrowser({ headless: false });
-})()
-```
-
-Good place to put it is ```beforeAll()``` hook in Your test framework (this is working example for JEST)
-```javascript
-describe("My test", () => {
-    beforeAll(async () => {
-        await BrowserUtils.init({ headless: false });
-    })
-
-    afterAll(async () => {
-        await BrowserUtils.disconnect(); // don't forget to close the browser.
-    })
-
-    it("my test", async () => {
-        await page.open("http://www.example.com")
-        await $("h1").click();
-    })
-})
-```
-
-## Working example in pure JS ES6+:
-```javascript
-const framework = require("page-framework")
-const BrowserUtils = framework.BrowserUtils;
-const $ = framework.$;
-
-(async () => {
-    await BrowserUtils.init({ headless: false });
-    await page.goto("http://www.example.com");
-    const txt = await $("h1").getText();
-
-    console.log(txt);
-    page.close(); // comment this line to keep the browser alive
-})()
-```
-
-## Working example in pure TypeScript: 
-```typescript
-import { Page as PuppeteerPage } from "puppeteer";
-import { $, BrowserUtils } from "page-framework";
-
-declare var page: PuppeteerPage;
-
-(async () => {
-    await BrowserUtils.init({ headless: false });
-    await page.goto("http://www.example.com");
-    const txt = await $("h1").getText();
-
-    console.log(txt);
-    page.close(); // comment this line to keep the browser alive
-})()
-```
-
+Use without **jest** framework [HERE](#Use-without-JEST-framework) to it so:
 
 #Functionalities description
 ## Simple use element matchers
@@ -181,6 +118,74 @@ Of course sub-elements still works as arrays:
 elems = $(".some.parent").$x("//ul").$$("li");
 await elems.forEach(e => console.log(e.getText())) 
 ```
+
+
+
+#Use without JEST framework 
+Alternative way
+
+###
+```javascript
+//SOMEWHERE AT THE BEGINNING OF THE SCRIPT
+const BrowserUtils = require("page-framework").BrowserUtils;
+
+(async () => {
+    await BrowserUtils.initBrowser({ headless: false });
+})()
+```
+
+Good place to put it is ```beforeAll()``` hook in Your test framework (this is working example for JEST)
+```javascript
+describe("My test", () => {
+    beforeAll(async () => {
+        await BrowserUtils.init({ headless: false });
+    })
+
+    afterAll(async () => {
+        await BrowserUtils.disconnect(); // don't forget to close the browser.
+    })
+
+    it("my test", async () => {
+        await page.open("http://www.example.com")
+        await $("h1").click();
+    })
+})
+```
+
+## Working example in pure JS ES6+:
+```javascript
+const framework = require("page-framework")
+const BrowserUtils = framework.BrowserUtils;
+const $ = framework.$;
+
+(async () => {
+    await BrowserUtils.init({ headless: false });
+    await page.goto("http://www.example.com");
+    const txt = await $("h1").getText();
+
+    console.log(txt);
+    page.close(); // comment this line to keep the browser alive
+})()
+```
+
+## Working example in pure TypeScript: 
+```typescript
+import { Page as PuppeteerPage } from "puppeteer";
+import { $, BrowserUtils } from "page-framework";
+
+declare var page: PuppeteerPage;
+
+(async () => {
+    await BrowserUtils.init({ headless: false });
+    await page.goto("http://www.example.com");
+    const txt = await $("h1").getText();
+
+    console.log(txt);
+    page.close(); // comment this line to keep the browser alive
+})()
+```
+
+
 
 
 # Development
