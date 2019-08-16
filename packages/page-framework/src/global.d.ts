@@ -1,0 +1,1 @@
+import 'jest-extended'; // For IDE autocompletion 
